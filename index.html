@@ -45,7 +45,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/themes/yilia/avatar.jpg" class="js-avatar">
+			<img src="/public/images/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Justin</a></h1>
@@ -103,7 +103,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/themes/yilia/avatar.jpg" class="js-avatar">
+				<img src="/public/images/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Justin</h1>
@@ -281,19 +281,23 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="Hexo-建站"><a href="#Hexo-建站" class="headerlink" title="Hexo 建站"></a>Hexo 建站</h2><p><code>Hexo</code>是一个博客框架，默认使用<code>Markdown</code>作为引擎解析文章，生成静态 html 文件。<br>安装 hexo 之前需要安装有 Node.js 和 Git。</p>
+<p>![Unsplash][id]<br>[id]: /public/images/hexo_1.png  “hexo”</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli    &#x2F;&#x2F; 全局安装 hexo</span><br><span class="line">$ npm install hexo           &#x2F;&#x2F; 局部安装 hexo</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo version    &#x2F;&#x2F; 显示 hexo 版本信息</span><br></pre></td></tr></table></figure>
-
+<p><img src="/public/iamges/hexo_2.png," alt="check version" title="hexo"></p>
 <p>使用 hexo 命令建站</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;	&#x2F;&#x2F; 这个 folder 就是站点的开始的文件夹</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p><img src="/public/iamges/hexo_3.png," alt="hexo init" title="hexo init"><br><img src="/public/iamges/hexo_4.png," alt="hexo" title="hexo"></p>
 <p>之后你可以看到一些目录和文件,主要有：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
 
 <p><code>source\_posts\</code> 这个目录下就是你新建的 MD 文件的存放目录。<code>_config.yml</code>是配置文件，里面有关于此站点的所有设置。</p>
 <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>使用 <code>hexo init</code>就可以在当前的目录新建一个站点了，及时不设置<code>_config.yml</code>文件，也是可以开始写文章的。默认有个 hello world 的模板。可以直接建.md文件<br>或者使用命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br><span class="line">$ hexo new &quot;About me&quot;</span><br><span class="line">$ hexo new &quot;Markdown List&quot;</span><br></pre></td></tr></table></figure>
-
+<p><img src="/public/iamges/hexo_5.png," alt="hexo new " title="hexo new"></p>
+<h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p><img src="/public/iamges/hexo_6.png," alt="hexo server " title="hexo server"></p>
 <h2 id="部署到-github"><a href="#部署到-github" class="headerlink" title="部署到 github"></a>部署到 github</h2><p>打开<code>_config.yml</code>文件，在 deploy 部分做配置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repository: https:&#x2F;&#x2F;github.com&#x2F;winjin&#x2F;winjin.github.io</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
 
@@ -394,7 +398,7 @@
 
 <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
 
-<p>邮件<br><a href="mailto:&#x61;&#x75;&#x74;&#x6f;&#109;&#97;&#x74;&#x69;&#99;&#119;&#106;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;">&#x61;&#x75;&#x74;&#x6f;&#109;&#97;&#x74;&#x69;&#99;&#119;&#106;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>邮件<br><a href="mailto:&#97;&#x75;&#x74;&#x6f;&#109;&#97;&#x74;&#x69;&#99;&#x77;&#106;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#x6f;&#109;">&#97;&#x75;&#x74;&#x6f;&#109;&#97;&#x74;&#x69;&#99;&#x77;&#106;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#x6f;&#109;</a></p>
 <h2 id="无、有序列表"><a href="#无、有序列表" class="headerlink" title="无、有序列表"></a>无、有序列表</h2><p>无序列表</p>
 <ul>
 <li>此字左边的-和几个空格</li>
@@ -456,10 +460,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*****</span><br><span class="line">* * * *</span><br><span class="line">- - - - 英文减号</span><br><span class="line">______  英文下划线</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="图片-链接-邮件"><a href="#图片-链接-邮件" class="headerlink" title="图片 链接 邮件"></a>图片 链接 邮件</h2><p><img src="https://unsplash.com/photos/ipTXB0fdUBY" alt="Unsplash" title="Bird"></p>
+<h2 id="图片-链接-邮件"><a href="#图片-链接-邮件" class="headerlink" title="图片 链接 邮件"></a>图片 链接 邮件</h2><p><img src="/public/images/Unsplash_mdxx12.jpg" alt="Unsplash" title="Bird"></p>
 <hr>
 <p>![Unsplash][id]<br>[id]: <a href="https://unsplash.com/photos/ipTXB0fdUBY" target="_blank" rel="noopener">https://unsplash.com/photos/ipTXB0fdUBY</a>  “Bird”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">行内式</span><br><span class="line">![图片alt](图片地址 &quot;图片title&quot;)</span><br><span class="line">图片alt是图片的说明文字</span><br><span class="line">图片title是当鼠标移动到图片上面显示的文字。可省略。</span><br><span class="line"></span><br><span class="line">![Unsplash](https:&#x2F;&#x2F;unsplash.com&#x2F;photos&#x2F;ipTXB0fdUBY &quot;Bird&quot;)</span><br><span class="line">* * * * *</span><br><span class="line">![Unsplash][id]</span><br><span class="line">[id]: https:&#x2F;&#x2F;unsplash.com&#x2F;photos&#x2F;ipTXB0fdUBY  &quot;Bird&quot;</span><br><span class="line"></span><br><span class="line">参考式</span><br><span class="line">![图片alt][id]</span><br><span class="line">[id]: url  &quot;title&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">行内式</span><br><span class="line">![图片alt](图片地址 &quot;图片title&quot;)</span><br><span class="line">图片alt是图片的说明文字</span><br><span class="line">图片title是当鼠标移动到图片上面显示的文字。可省略。</span><br><span class="line"></span><br><span class="line">![Unsplash](&#x2F;public&#x2F;images&#x2F;Unsplash_mdxx12.jpg &quot;Bird&quot;)</span><br><span class="line">* * * * *</span><br><span class="line">![Unsplash][id]</span><br><span class="line">[id]: https:&#x2F;&#x2F;unsplash.com&#x2F;photos&#x2F;ipTXB0fdUBY  &quot;Bird&quot;</span><br><span class="line"></span><br><span class="line">参考式</span><br><span class="line">![图片alt][id]</span><br><span class="line">[id]: url  &quot;title&quot;</span><br></pre></td></tr></table></figure>
 
 <p><a href="https://github.com/" target="_blank" rel="noopener" title="github link">Github</a><br>[Github][id]<br>[id]: <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">行内式</span><br><span class="line">[超链接名](超链接地址, &quot;超链接title&quot;)</span><br><span class="line"></span><br><span class="line">[Github](https:&#x2F;&#x2F;github.com&#x2F; &quot;github link&quot;)</span><br><span class="line">[Github][id]</span><br><span class="line">[id]: https:&#x2F;&#x2F;github.com&#x2F;</span><br><span class="line"></span><br><span class="line">参考式</span><br><span class="line">[超链接名][id]</span><br><span class="line">[id]: url  &quot;title&quot;</span><br><span class="line">或者</span><br><span class="line">&lt;a href&#x3D;&quot;超链接地址&quot; target&#x3D;&quot;_blank&quot;&gt;超链接名&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
@@ -876,7 +880,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">https://winjin.github.io/2020/03/20/About-Me/</div>
   	  	
     	</section>
     
