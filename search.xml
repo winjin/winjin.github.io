@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>favicon note</title>
+    <url>/2020/03/27/favicon-note/</url>
+    <content><![CDATA[<p>favicon 是 favorite icon 的缩写。也就是出现在浏览器书签中网站名左边的那个小图标。有的还会出现在地址栏 URL 的左边。</p>
+<p>一般都会被命名为 favicon.ico </p>
+<p>以下是一些常见的用法：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"/src/iamges/favicon.ico&gt;</span></span></span><br><span class="line"><span class="tag"><span class="string"></span></span></span><br><span class="line"><span class="tag"><span class="string">&lt;link rel="</span><span class="attr">icon</span>" <span class="attr">href</span>=<span class="string">"/src/iamges/favicon.png&gt;</span></span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>Computer Config</title>
     <url>/2020/03/24/Computer-Config/</url>
     <content><![CDATA[<p>——–[ 概览 ]———————————————————————————-</p>
@@ -227,8 +235,8 @@
     <td>wenjin</td>
     <td>性别</td>
     <td>男</td>
-    <td>年龄</td>
-    <td>33</td>
+    <td>现居</td>
+    <td>北京</td>
   </tr>
   <tr>
     <td>专业</td>
