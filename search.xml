@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vue note</title>
+    <url>/2020/04/08/vue-note/</url>
+    <content><![CDATA[<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>直接下载并使用<code>&lt;script&gt;</code>标签引入，Vue会被注册为一个全局变量。</li>
+<li>或者使用<code>npm</code>安装，执行<code>npm install vue</code> 安装最新稳定版。</li>
+</ul>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Vue的是个渐进式的前端框架。页面上的数据和<code>DOM</code>是响应式的，也即双向绑定的。<br>学习Vue，不要想<code>jQuery</code>，要回来学习<code>JavaScript</code>。</p>
+<h2 id="Vue-实例"><a href="#Vue-实例" class="headerlink" title="Vue 实例"></a>Vue 实例</h2><p>一个 <code>Vue</code> 应用由一个通过 <code>new Vue</code> 创建的根 <code>Vue</code> 实例，以及可选的嵌套的、可复用的组件树组成。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var vm &#x3D; new Vue(&#123;</span><br><span class="line">  &#x2F;&#x2F; 选项属性 ...</span><br><span class="line">	</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>vm 是 ViewModel 的缩写，常用来表示 Vue 实例， 这个实例也叫<code>选项对象</code>。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>favicon note</title>
     <url>/2020/03/27/favicon-note/</url>
     <content><![CDATA[<p>favicon 是 favorite icon 的缩写。也就是出现在浏览器书签中网站名左边的那个小图标。有的还会出现在地址栏 URL 的左边。</p>
