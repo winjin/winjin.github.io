@@ -1,6 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Bootstrap Note</title>
+    <url>/2020/04/16/Bootstrap-Note/</url>
+    <content><![CDATA[<h1 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h1><h2 id="Bootstrap-简介"><a href="#Bootstrap-简介" class="headerlink" title="Bootstrap 简介"></a>Bootstrap 简介</h2><p><code>bootsrap</code>是基于<code>jQuery</code>的一款前段框架,jQuery 必须在 Bootstrap 之前引入。它需要使用<code>HTML5</code>的 doctype ，Bootstrap3 是以移动设备优先的。<br>为了兼容性更好，需要加上 viewport 的 meta 标签。</p>
+<h3 id="基本模板"><a href="#基本模板" class="headerlink" title="基本模板"></a>基本模板</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>		<span class="comment">&lt;!--  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-CN"</span>&gt;</span>		<span class="comment">&lt;!-- 设置默认本地语言 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--  --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span>		<span class="comment">&lt;!-- 兼容 IE edge 的 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span>		<span class="comment">&lt;!-- width 属性控制设备的宽度 --&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">&lt;!-- &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt; --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Bootstrap 101 Template<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Bootstrap --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!--[if lt IE 9]&gt;</span></span><br><span class="line"><span class="comment">      &lt;script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">      &lt;script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">    &lt;![endif]--&gt;</span></span><br><span class="line">	</span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>你好，世界！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="全局样式"><a href="#全局样式" class="headerlink" title="全局样式"></a>全局样式</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">"Helvetica Neue"</span>, Helvetica, Arial, sans-serif;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.428571429</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#333333</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>并且使用 Normalize.css 来初始化一些元素，保证不同浏览器的一致性。</p>
+<h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4><p>主要有两个 class ：container 和 container-fluid。 容器不能相互嵌套。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">   <span class="attribute">padding-right</span>: <span class="number">15px</span>;</span><br><span class="line">   <span class="attribute">padding-left</span>: <span class="number">15px</span>;</span><br><span class="line">   <span class="attribute">margin-right</span>: auto;</span><br><span class="line">   <span class="attribute">margin-left</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="栅格系统"><a href="#栅格系统" class="headerlink" title="栅格系统"></a>栅格系统</h3><ul>
+<li><code>row</code>必须放到<code>container</code>内。</li>
+<li>用<code>row</code>创建<code>col</code>列。</li>
+<li>内容应该放置在列内，且唯有<code>列</code>可以是<code>行</code>的<code>直接</code>子元素。</li>
+<li>列通过内边距（padding）来创建列内容之间的间隙。该内边距是通过 .rows 上的外边距（margin）取负，表示第一列和最后一列的行偏移。</li>
+<li>网格系统是通过指定您想要横跨的十二个可用的列来创建的。例如，要创建三个相等的列，则使用三个 .col-xs-4。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-*-*"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-*-*"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>     </span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span>....</span><br></pre></td></tr></table></figure>
+<h4 id="偏移列"><a href="#偏移列" class="headerlink" title="偏移列"></a>偏移列</h4><p>大屏幕使用 .col-md-offset-* 这些类实现偏移。这些类会把一个列的左外边距（margin）增加 * 列，其中 * 范围是从 1 到 11。</p>
+<h4 id="嵌套列"><a href="#嵌套列" class="headerlink" title="嵌套列"></a>嵌套列</h4><p>要嵌套列，必须先在列里面写<code>row</code>，然后在行里面写列。</p>
+<h4 id="列排序"><a href="#列排序" class="headerlink" title="列排序"></a>列排序</h4><p>通过使用 .col-md-push-* 和 .col-md-pull-* 类就可以很容易的改变列（column）的顺序。</p>
+<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><ul>
+<li><code>&lt;h1&gt; &lt;h6&gt;</code> 标题和 <small> 副标题</li>
+<li><code>&lt;mark&gt;</code> 用来显示高亮内容</li>
+<li><code>&lt;del&gt; &lt;s&gt;</code> 带删除线的文本</li>
+<li><code>&lt;ins&gt; &lt;u&gt;</code> 带下划线的文本</li>
+<li><code>&lt;blockquote&gt;</code> 引用文本</li>
+</ul>
+<ul>
+<li>用于对齐方式的类： text-left text-center text-right text-justify text-nowrap</li>
+<li>用于改变文本大小： text-lowercase  text-uppercase  text-capitalize</li>
+</ul>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><ul>
+<li>作用在 ul ol 上的 list-unstyled 类用来移除着重号， list-inline 类用来把所有<code>li</code>放到一行内</li>
+<li>作用在  dl  上的 dl-horizontal 类可以使 dt 和 dd 显示到一行内</li>
+<li>text-overflow 属性可以截断列表中太长的内容</li>
+</ul>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul>
+<li><code>&lt;kbd&gt;</code>  标记用户通过键盘输入的内容。</li>
+<li><code>&lt;code&gt;</code> 内联显示代码</li>
+<li><code>&lt;pre&gt;</code> 块状显示代码</li>
+<li>当使用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 标签时，开始和结束标签应该使用 unicode 变体： <code>&amp;lt;</code> 和 <code>&amp;gt;</code>。</li>
+<li><code>.pre-scrollable</code> 类    使 <code>&lt;pre&gt;</code> 元素可滚动</li>
+<li><code>&lt;var&gt;</code> 标签标记变量</li>
+<li><code>&lt;samp&gt;</code> 标签来标记程序输出的内容</li>
+</ul>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"table-responsive"</span>&gt;</span>		<span class="comment">&lt;!-- 使表格变为响应式，在小屏幕可以滚动 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"table"</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">caption</span>&gt;</span>基本的表格布局<span class="tag">&lt;/<span class="name">caption</span>&gt;</span>	<span class="comment">&lt;!-- 表格头 --&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">		  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">th</span>&gt;</span>名称<span class="tag">&lt;/<span class="name">th</span>&gt;</span>		<span class="comment">&lt;!-- 标题 --&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">th</span>&gt;</span>城市<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">		  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">		  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">td</span>&gt;</span>Tanmay<span class="tag">&lt;/<span class="name">td</span>&gt;</span>	<span class="comment">&lt;!-- 表格列内容 --&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">td</span>&gt;</span>Bangalore<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">		  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">td</span>&gt;</span>Sachin<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			 <span class="tag">&lt;<span class="name">td</span>&gt;</span>Mumbai<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">		  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">	   <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>用在<code>table</code>上的类：</p>
+<ul>
+<li><code>.table</code>基本表格</li>
+<li><code>.table-striped</code>条纹表格</li>
+<li><code>.table-bordered</code>有边框的表格</li>
+<li><code>.table-hover</code> tbody 有悬停阴影的表格</li>
+<li><code>.table-condensed</code> padding 紧凑的表格</li>
+</ul>
+<p>用在<code>tr</code> 和 <code>td</code>上的类： .active     .success  .info  .warning    .danger</p>
+<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><h4 id="表单布局："><a href="#表单布局：" class="headerlink" title="表单布局："></a>表单布局：</h4><ul>
+<li><p>垂直表单（默认）</p>
+<ul>
+<li>把标签和控件放在一个带有类 .form-group 的 <code>&lt;div&gt;</code> 中。这样可以获取最佳间距。</li>
+<li>向所有的文本元素 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 和 <code>&lt;select&gt;</code> 添加类 .form-control。</li>
+<li>默认情况下，Bootstrap 中的 input、select 和 textarea 有 100% 宽度。在使用内联表单时，您需要在表单控件上设置一个宽度。</li>
+<li>可以通过为 label 设置 .sr-only 类将其隐藏。</li>
+</ul>
+</li>
+<li><p>内联表单</p>
+<ul>
+<li>向 form 标签添加类 .form-inline</li>
+<li>可以通过为 label 设置 .sr-only 类将其隐藏。</li>
+<li>可以手动设置 wdith</li>
+<li>一定要添加 label 标签</li>
+</ul>
+</li>
+<li><p>水平表单</p>
+<ul>
+<li>向父 form 元素添加类 .form-horizontal。</li>
+<li>把标签和控件放在一个带有类 .form-group 的 <div> 中。</li>
+<li>向标签对应的 label 添加类 .control-label。</li>
+<li>.form-group 类和 .col-<em>-</em> 这样的栅格类结合使用，从而使 label 和表单水平显示。</li>
+</ul>
+</li>
+<li><p>必须添加 type 属性声明</p>
+</li>
+<li><p>如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 <p> 元素添加 .form-control-static 类即可。</p>
+</li>
+<li><p>要在文本输入框 <code>&lt;input&gt;</code> 前面、后面或是两边加上文字或按钮等，可以为 输入框组 input-group 赋予 .input-group-addon 或 .input-group-btn 类，就可以给 .form-control 的前面或后面添加额外的元素了。</p>
+</li>
+</ul>
+<h4 id="复选框（CheckBoxe）和单选框（Radio）"><a href="#复选框（CheckBoxe）和单选框（Radio）" class="headerlink" title="复选框（CheckBoxe）和单选框（Radio）"></a>复选框（CheckBoxe）和单选框（Radio）</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"checkbox disabled"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">""</span> <span class="attr">disabled</span>&gt;</span></span><br><span class="line">    Option two is disabled</span><br><span class="line">  <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"radio disabled"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"optionsRadios"</span> <span class="attr">id</span>=<span class="string">"optionsRadios"</span> <span class="attr">value</span>=<span class="string">"option"</span> <span class="attr">disabled</span>&gt;</span></span><br><span class="line">    Option three is disabled</span><br><span class="line">  <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>对一系列复选框和单选框使用 .checkbox-inline 或 .radio-inline class，控制它们显示在同一行上。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;label class&#x3D;&quot;checkbox-inline&quot;&gt;</span><br><span class="line">  &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;inlineCheckbox1&quot; value&#x3D;&quot;option1&quot;&gt; 1</span><br><span class="line">&lt;&#x2F;label&gt;</span><br><span class="line">&lt;label class&#x3D;&quot;radio-inline&quot;&gt;</span><br><span class="line">  &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;inlineRadioOptions&quot; id&#x3D;&quot;inlineRadio1&quot; value&#x3D;&quot;option1&quot;&gt; 1</span><br><span class="line">&lt;&#x2F;label&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="下拉列表（select）"><a href="#下拉列表（select）" class="headerlink" title="下拉列表（select）"></a>下拉列表（select）</h4><ul>
+<li><code>select</code> 标签也使用 .form-control 类。可多选需要设置 multiple 属性。</li>
+<li>只需要对父元素简单地添加适当的 class（.has-warning、 .has-error 或 .has-success）即可显示对应的验证样式。</li>
+<li>.has-feedback 类 对应的反馈图标（feedback icon）只能使用在文本输入框 <code>&lt;input class=&quot;form-control&quot;&gt;</code> 元素上。</li>
+<li>控件的尺寸通过 .input-lg 类似的类设置高度，通过 .col-lg-* 类似的类设置宽度。</li>
+</ul>
+<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><p><code>&lt;a&gt;</code>、<code>&lt;button&gt;</code> 或 <code>&lt;input&gt;</code> 元素添加按钮类，都可以作为 button 使用。<br>使用 .btn-lg、.btn-sm 或 .btn-xs 来改变按钮的尺寸。<br>使用 .active、.disabled 为 a 标签类型的按钮改变状态，使用 disabled、 <s>opacity</s> 属性给 button 标签改变状态</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- Standard button --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;（默认样式）Default&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;（首选项）Primary&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Indicates a successful or positive action --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;（成功）Success&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Contextual button for informational alert messages --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;（一般信息）Info&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Indicates caution should be taken with this action --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;（警告）Warning&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;（危险）Danger&lt;&#x2F;button&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span><br><span class="line">&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;（链接）Link&lt;&#x2F;button&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>为图片添加 .img-responsive 类可以让图片支持响应式布局。<br>让使用了 .img-responsive 类的图片水平居中，使用 .center-block 类。<br>img 标签有三个类可以改变图片形状：<br>    - .img-rounded：添加 border-radius:6px 来获得图像圆角。<br>    - .img-circle：添加 border-radius:500px 来让整个图像变成圆形。<br>    - .img-thumbnail：添加一些内边距（padding）和一个灰色的边框。</p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="Glyphicons-字体图标"><a href="#Glyphicons-字体图标" class="headerlink" title="Glyphicons 字体图标"></a>Glyphicons 字体图标</h3><p>字形图标（Glyphicons）是在 Web 项目中使用的图标字体。<br><code>&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;</code> glyphicon-user 就是要使用的具体图标的名字</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@font-face &#123;</span><br><span class="line">  font-family: &#39;Glyphicons Halflings&#39;;</span><br><span class="line">  src: url(&#39;..&#x2F;fonts&#x2F;glyphicons-halflings-regular.eot&#39;);   &#x2F;* 图标字体的位置 *&#x2F;</span><br><span class="line">  src: url(&#39;..&#x2F;fonts&#x2F;glyphicons-halflings-regular.eot?#iefix&#39;) format(&#39;embedded-opentype&#39;), url(&#39;..&#x2F;fonts&#x2F;glyphicons-halflings-regular.woff&#39;) format(&#39;woff&#39;), url(&#39;..&#x2F;fonts&#x2F;glyphicons-halflings-regular.ttf&#39;) format(&#39;truetype&#39;), url(&#39;..&#x2F;fonts&#x2F;glyphicons-halflings-regular.svg#glyphicons_halflingsregular&#39;) format(&#39;svg&#39;);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.glyphicon &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  top: 1px;</span><br><span class="line">  display: inline-block;</span><br><span class="line">  font-family: &#39;Glyphicons Halflings&#39;;</span><br><span class="line">  -webkit-font-smoothing: antialiased;</span><br><span class="line">  font-style: normal;</span><br><span class="line">  font-weight: normal;</span><br><span class="line">  line-height: 1;</span><br><span class="line">  -moz-osx-font-smoothing: grayscale;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h3 id="下拉菜单-Dropdown"><a href="#下拉菜单-Dropdown" class="headerlink" title="下拉菜单 Dropdown"></a>下拉菜单 Dropdown</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;dropdown&quot;&gt;  &#x2F;* fropdown 向下弹出菜单， dropup 向上弹出菜单 *&#x2F;</span><br><span class="line">  &lt;button class&#x3D;&quot;btn btn-default dropdown-toggle&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;dropdownMenu1&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;true&quot;&gt;</span><br><span class="line">    Dropdown</span><br><span class="line">    &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">  &lt;&#x2F;button&gt;</span><br><span class="line">  &lt;ul class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;dropdownMenu1&quot;&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">	&lt;li class&#x3D;&quot;dropdown-header&quot;&gt;Dropdown header&lt;&#x2F;li&gt;  &#x2F;* 标题分组 *&#x2F;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;&#x2F;li&gt;</span><br><span class="line">	&lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;&#x2F;li&gt;  &#x2F;* 分割线 *&#x2F;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">	&lt;li class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;  &#x2F;* 禁用的菜单项 *&#x2F;</span><br><span class="line">  &lt;&#x2F;ul&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="按钮组"><a href="#按钮组" class="headerlink" title="按钮组"></a>按钮组</h3><ul>
+<li>.btn-group    用于形成基本的按钮组。在 .btn-group 中放置一系列带有.btn 的按钮。</li>
+<li>按钮工具栏就是把一组 <div class="btn-group"> 放进一个 <div class="btn-toolbar"> 中。</li>
+<li>给 .btn-group 加上 .btn-group-* 类，可以修改按钮组尺寸。</li>
+<li>把 .btn-group 放入另一个 .btn-group 中，可以把列表嵌套到后一个 .btn-group。</li>
+<li>btn-group-vertical 类可以让按钮组垂直排序。</li>
+</ul>
+<h3 id="按钮式下拉菜单"><a href="#按钮式下拉菜单" class="headerlink" title="按钮式下拉菜单"></a>按钮式下拉菜单</h3><p>在一个 .btn-group 中放置<code>按钮</code>和<code>下拉菜单</code>即可</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;btn-group&quot;&gt;</span><br><span class="line">  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Action&lt;&#x2F;button&gt;</span><br><span class="line">  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;sr-only&quot;&gt;Toggle Dropdown&lt;&#x2F;span&gt;</span><br><span class="line">  &lt;&#x2F;button&gt;</span><br><span class="line">  &lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">  &lt;&#x2F;ul&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入框组"><a href="#输入框组" class="headerlink" title="输入框组"></a>输入框组</h3><p>向 .form-control 类的 input 文本输入框的前或后添加前缀后缀的步骤如下：</p>
+<ul>
+<li>把有 .form-control 类的 input 标签放到类 .input-group 的 <div> 中。</li>
+<li>在此 input 的前或者后放一个 span 标签，为此 span 加 .input-group-addon 类。</li>
+<li>在 span 内写上要加的前后缀。</li>
+</ul>
+<h3 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h3><p>导航组件都依赖同一个 .nav 类，状态类也是共用的。<br>在标签页上使用导航需要依赖 JavaScript 标签页插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;ul class&#x3D;&quot;nav nav-tabs nav-justified&quot;&gt;</span><br><span class="line">   &lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;SVN&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;iOS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;VB.Net&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Java&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;PHP&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br><span class="line">&lt;ul class&#x3D;&quot;nav nav-pills nav-justified&quot;&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;iOS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">   &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;VB.Net&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">  ...</span><br><span class="line">  &lt;li role&#x3D;&quot;presentation&quot; class&#x3D;&quot;disabled&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Disabled link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h3><h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><h3 id="徽章"><a href="#徽章" class="headerlink" title="徽章"></a>徽章</h3><p>给链接、导航等元素嵌套 <span class="badge"> 元素，可以很醒目的展示新的或未读的信息条目。</p>
+<h3 id="巨幕"><a href="#巨幕" class="headerlink" title="巨幕"></a>巨幕</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;jumbotron&quot;&gt;</span><br><span class="line">  &lt;h1&gt;Hello, world!&lt;&#x2F;h1&gt;</span><br><span class="line">  &lt;p&gt;...&lt;&#x2F;p&gt;</span><br><span class="line">  &lt;p&gt;&lt;a class&#x3D;&quot;btn btn-primary btn-lg&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot;&gt;Learn more&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="警告框"><a href="#警告框" class="headerlink" title="警告框"></a>警告框</h3><p>使用 .alert 类， alert-success  alert-info  alert-warning  alert-danger<br> .alert-dismissible 使警告框可关闭。<br> 用 .alert-link 工具类，可以为链接设置与当前警告框相符的颜色。</p>
+<h3 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h3><p>创建一个进度条：</p>
+<p>添加一个 .progress 的 <div>。<br>在此 <div> 内，添加一个带有 .progress-bar 的 <div>。<br>给此 div 添加一个 style 属性，例如 style=”60%”; 表示进度条在 60% 的位置。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;progress&quot;&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;progress-bar&quot; role&#x3D;&quot;progressbar&quot; aria-valuenow&#x3D;&quot;60&quot; aria-valuemin&#x3D;&quot;0&quot; aria-valuemax&#x3D;&quot;100&quot; style&#x3D;&quot;width: 60%;&quot;&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;sr-only&quot;&gt;60% Complete&lt;&#x2F;span&gt;	&lt;!-- 隐藏进度数字 --&gt;</span><br><span class="line">	60% Complete	&lt;!-- 显示进度数字 --&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<p>progress-bar-success  progress-bar-info … 改变进度条颜色<br>progress-bar-striped 进度条带条纹， progress-bar-striped active 带动画效果</p>
+<h3 id="面版"><a href="#面版" class="headerlink" title="面版"></a>面版</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;panel panel-default&quot;&gt;	&lt;!-- 必须的 --&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;panel-heading&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;panel-title&quot;&gt;Panel title&lt;&#x2F;h3&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;panel-body&quot;&gt;		&lt;!-- 必须的 --&gt;</span><br><span class="line">    Panel content</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;panel-footer&quot;&gt;Panel footer&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>vue note</title>
     <url>/2020/04/08/vue-note/</url>
     <content><![CDATA[<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
@@ -11,7 +232,7 @@
 <h2 id="Vue-实例"><a href="#Vue-实例" class="headerlink" title="Vue 实例"></a>Vue 实例</h2><p>一个 <code>Vue</code> 应用由一个通过 <code>new Vue</code> 创建的根 <code>Vue</code> 实例，以及可选的嵌套的、可复用的组件树组成。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var vm &#x3D; new Vue(&#123;</span><br><span class="line">  &#x2F;&#x2F; 选项属性 ...</span><br><span class="line">	</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>vm 是 ViewModel 的缩写，常用来表示 Vue 实例， 这个实例也叫<code>选项对象</code>。</p>
-]]></content>
+<h2 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h2>]]></content>
   </entry>
   <entry>
     <title>favicon note</title>
