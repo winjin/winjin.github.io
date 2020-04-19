@@ -1,9 +1,795 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML5</title>
+    <url>/2020/04/19/HTML5/</url>
+    <content><![CDATA[<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h2 id="HTML-标签列表（功能排序）"><a href="#HTML-标签列表（功能排序）" class="headerlink" title="HTML 标签列表（功能排序）"></a>HTML 标签列表（功能排序）</h2><p>New : HTML5 新标签</p>
+<table>
+    <tbody>
+        <tr>
+            <th>标签</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td><b>基础</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;!DOCTYPE&gt; </td>
+            <td>定义文档类型。</td>
+        </tr>
+        <tr>
+            <td> &lt;html&gt; </td>
+            <td>定义一个 HTML 文档</td>
+        </tr>
+        <tr>
+            <td> &lt;title&gt; </td>
+            <td>html页面的标题 </td>
+        </tr>
+        <tr>
+            <td> &lt;body&gt; </td>
+            <td>定义文档的主体</td>
+        </tr>
+        <tr>
+            <td> &lt;h1&gt; to &lt;h6&gt; </td>
+            <td>定义 body 的标题 </td>
+        </tr>
+        <tr>
+            <td> &lt;p&gt; </td>
+            <td>定义一个段落</td>
+        </tr>
+        <tr>
+            <td> &lt;br&gt; </td>
+            <td>换行。</td>
+        </tr>
+        <tr>
+            <td> &lt;hr&gt; </td>
+            <td>水平线。</td>
+        </tr>
+        <tr>
+            <td> &lt;!--...--&gt; </td>
+            <td>注释</td>
+        </tr>
+        <tr>
+            <td><b>格式</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;abbr&gt; </td>
+            <td>定义一个缩写。</td>
+        </tr>
+        <tr>
+            <td> &lt;address&gt; </td>
+            <td>地址信息。</td>
+        </tr>
+        <tr>
+            <td> &lt;b&gt; </td>
+            <td>粗体文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;bdi&gt;  New </td>
+            <td>允许设置一段文本，使其脱离其父元素的文本方向设置。</td>
+        </tr>
+        <tr>
+            <td> &lt;bdo&gt; </td>
+            <td>定义文本的方向。</td>
+        </tr>
+        <tr>
+            <td> &lt;blockquote&gt; </td>
+            <td>定义块引用。</td>
+        </tr>
+        <tr>
+            <td> &lt;cite&gt; </td>
+            <td>定义引用(citation)。</td>
+        </tr>
+        <tr>
+            <td> &lt;code&gt; </td>
+            <td>定义计算机代码文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;del&gt; </td>
+            <td>定义被删除文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;dfn&gt; </td>
+            <td>定义定义项目。</td>
+        </tr>
+        <tr>
+            <td> &lt;em&gt; </td>
+            <td>定义强调文本。 </td>
+        </tr>
+        <tr>
+            <td> &lt;i&gt; </td>
+            <td>定义斜体文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;ins&gt; </td>
+            <td>定义被插入文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;kbd&gt; </td>
+            <td>定义键盘文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;mark&gt; New </td>
+            <td>定义带有记号的文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;meter&gt; New </td>
+            <td>仅用于定义已知最大和最小值的度量。</td>
+        </tr>
+        <tr>
+            <td> &lt;pre&gt; </td>
+            <td>定义预格式文本</td>
+        </tr>
+        <tr>
+            <td> &lt;progress&gt; New </td>
+            <td>运行中的任务进度（进程）。</td>
+        </tr>
+        <tr>
+            <td> &lt;q&gt; </td>
+            <td>定义短的引用。</td>
+        </tr>
+        <tr>
+            <td> &lt;rp&gt; New </td>
+            <td>定义不支持 ruby 元素的浏览器所显示的内容。</td>
+        </tr>
+        <tr>
+            <td> &lt;rt&gt; New </td>
+            <td>定义字符（中文注音或字符）的解释或发音。</td>
+        </tr>
+        <tr>
+            <td> &lt;ruby&gt; New </td>
+            <td>定义 ruby 注释（中文注音或字符）。</td>
+        </tr>
+        <tr>
+            <td> &lt;s&gt; </td>
+            <td>加删除线的文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;samp&gt; </td>
+            <td>定义计算机代码样本。</td>
+        </tr>
+        <tr>
+            <td> &lt;small&gt; </td>
+            <td>小号文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;strong&gt; </td>
+            <td>定义语气更为强烈的强调文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;sub&gt; </td>
+            <td>定义下标文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;sup&gt; </td>
+            <td>定义上标文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;time&gt; New </td>
+            <td>定义一个日期/时间</td>
+        </tr>
+        <tr>
+            <td> &lt;u&gt; </td>
+            <td>定义下划线文本。</td>
+        </tr>
+        <tr>
+            <td> &lt;var&gt; </td>
+            <td>定义文本的变量部分。</td>
+        </tr>
+        <tr>
+            <td> &lt;wbr&gt; New </td>
+            <td>规定在文本中的何处适合添加换行符。</td>
+        </tr>
+        <tr>
+            <td><b>表单</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;form&gt; </td>
+            <td>定义一个 HTML 表单，用于用户输入。</td>
+        </tr>
+        <tr>
+            <td> &lt;input&gt; </td>
+            <td>定义一个输入控件</td>
+        </tr>
+        <tr>
+            <td> &lt;textarea&gt; </td>
+            <td>定义多行的文本输入控件。</td>
+        </tr>
+        <tr>
+            <td> &lt;button&gt; </td>
+            <td>定义按钮。</td>
+        </tr>
+        <tr>
+            <td> &lt;select&gt; </td>
+            <td>定义选择列表（下拉列表）。</td>
+        </tr>
+        <tr>
+            <td> &lt;optgroup&gt; </td>
+            <td>定义选择列表中相关选项的组合。</td>
+        </tr>
+        <tr>
+            <td> &lt;option&gt; </td>
+            <td>定义选择列表中的选项。</td>
+        </tr>
+        <tr>
+            <td> &lt;label&gt; </td>
+            <td>定义 input 元素的标注。</td>
+        </tr>
+        <tr>
+            <td> &lt;fieldset&gt; </td>
+            <td>定义围绕表单中元素的边框。</td>
+        </tr>
+        <tr>
+            <td> &lt;legend&gt; </td>
+            <td>定义 fieldset 元素的标题。</td>
+        </tr>
+        <tr>
+            <td> &lt;datalist&gt; New </td>
+            <td>签规定了 input 元素可能的选项列表。</td>
+        </tr>
+        <tr>
+            <td> &lt;keygen&gt; New </td>
+            <td>规定用于表单的密钥对生成器字段。</td>
+        </tr>
+        <tr>
+            <td> &lt;output&gt; New </td>
+            <td>定义一个计算的结果</td>
+        </tr>
+        <tr>
+            <td><b>框架</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;iframe&gt; </td>
+            <td>定义内联框架。</td>
+        </tr>
+        <tr>
+            <td><b>图像</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;img&gt; </td>
+            <td>定义图像。</td>
+        </tr>
+        <tr>
+            <td> &lt;map&gt; </td>
+            <td>定义图像映射。 </td>
+        </tr>
+        <tr>
+            <td> &lt;area&gt; </td>
+            <td>定义图像地图内部的区域。</td>
+        </tr>
+        <tr>
+            <td> &lt;canvas&gt; New </td>
+            <td>通过脚本（通常是 JavaScript）来绘制图形（比如图表和其他图像）。</td>
+        </tr>
+        <tr>
+            <td> &lt;figcaption&gt; New </td>
+            <td> 为元素定义标题 </td>
+        </tr>
+        <tr>
+            <td> &lt;figure&gt; New </td>
+            <td>figure 标签用于对元素进行组合。</td>
+        </tr>
+        <tr>
+            <td><b>Audio/Video</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;audio&gt; New </td>
+            <td>定义声音，比如音乐或其他音频流。</td>
+        </tr>
+        <tr>
+            <td> &lt;source&gt; >New </td>
+            <td>定义media元素 (&lt;video&gt; 和 &lt;audio&gt;)的媒体资源。media </td>
+        </tr>
+        <tr>
+            <td> &lt;track&gt; New </td>
+            <td>为媒体(&lt;video&gt; 和 &lt;audio&gt;)元素定义外部文本轨道。</td>
+        </tr>
+        <tr>
+            <td> &lt;video&gt; New </td>
+            <td>定义一个音频或者视频</td>
+        </tr>
+        <tr>
+            <td><b>链接</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;a&gt; </td>
+            <td>定义一个链接</td>
+        </tr>
+        <tr>
+            <td> &lt;link&gt; </td>
+            <td>定义文档与外部资源的关系。</td>
+        </tr>
+        <tr>
+            <td> &lt;nav&gt; New </td>
+            <td>定义导航链接</td>
+        </tr>
+        <tr>
+            <td><b>列表</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;ul&gt; </td>
+            <td>定义一个无序列表</td>
+        </tr>
+        <tr>
+            <td> &lt;ol&gt; </td>
+            <td>定义一个有序列表</td>
+        </tr>
+        <tr>
+            <td> &lt;li&gt; </td>
+            <td>定义一个列表项</td>
+        </tr>
+        <tr>
+            <td> &lt;dl&gt; </td>
+            <td>定义标题类型的列表</td>
+        </tr>
+        <tr>
+            <td> &lt;dt&gt; </td>
+            <td>列表项</td>
+        </tr>
+        <tr>
+            <td> &lt;dd&gt; </td>
+            <td>列表项内容</td>
+        </tr>
+        <tr>
+            <td> &lt;menu&gt; </td>
+            <td>定义菜单列表。</td>
+        </tr>
+        <tr>
+            <td> &lt;command&gt; New </td>
+            <td>定义用户可能调用的命令（比如单选按钮、复选框或按钮）。</td>
+        </tr>
+        <tr>
+            <td><b>表格</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;table&gt; </td>
+            <td>定义一个表格</td>
+        </tr>
+        <tr>
+            <td> &lt;caption&gt; </td>
+            <td>定义表格标题。</td>
+        </tr>
+        <tr>
+            <td> &lt;th&gt; </td>
+            <td>定义表格中的表头单元格。</td>
+        </tr>
+        <tr>
+            <td> &lt;tr&gt; </td>
+            <td>定义表格中的行。</td>
+        </tr>
+        <tr>
+            <td> &lt;td&gt; </td>
+            <td>定义表格中的单元。</td>
+        </tr>
+        <tr>
+            <td> &lt;thead&gt; </td>
+            <td>定义表格中的表头内容。</td>
+        </tr>
+        <tr>
+            <td> &lt;tbody&gt; </td>
+            <td>定义表格中的主体内容。</td>
+        </tr>
+        <tr>
+            <td> &lt;tfoot&gt; </td>
+            <td>定义表格中的表注内容（脚注）。</td>
+        </tr>
+        <tr>
+            <td> &lt;col&gt; </td>
+            <td>定义表格中一个或多个列的属性值。</td>
+        </tr>
+        <tr>
+            <td> &lt;colgroup&gt; </td>
+            <td>定义表格中供格式化的列组。</td>
+        </tr>
+        <tr>
+            <td><b>元信息</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;head&gt; </td>
+            <td>HTML 文档的头部信息</td>
+        </tr>
+        <tr>
+            <td> &lt;meta&gt; </td>
+            <td>定义关于 HTML 文档的元信息。</td>
+        </tr>
+        <tr>
+            <td> &lt;base&gt </td>
+            <td>定义页面中所有链接的默认地址或默认目标。</td>
+        </tr>
+        <tr>
+            <td><b>程序</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;script&gt; </td>
+            <td>定义客户端脚本。</td>
+        </tr>
+        <tr>
+            <td> &lt;noscript&gt; </td>
+            <td>定义针对不支持客户端脚本的用户的替代内容。</td>
+        </tr>
+        <tr>
+            <td> &lt;embed&gt; New </td>
+            <td>定义了一个容器，用来嵌入外部应用或者互动程序（插件）。</td>
+        </tr>
+        <tr>
+            <td> &lt;object&gt; </td>
+            <td>定义嵌入的对象。</td>
+        </tr>
+        <tr>
+            <td> &lt;param&gt; </td>
+            <td>定义对象的参数。</td>
+        </tr>
+        <tr>
+            <td><b>其他</b></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> &lt;style&gt; </td>
+            <td>定义文档的样式信息。</td>
+        </tr>
+        <tr>
+            <td> &lt;div&gt; </td>
+            <td>定义文档中的节。</td>
+        </tr>
+        <tr>
+            <td> &lt;span&gt; </td>
+            <td>定义文档中的节。</td>
+        </tr>
+        <tr>
+            <td> &lt;header&gt; New </td>
+            <td>定义一个文档头部部分</td>
+        </tr>
+        <tr>
+            <td> &lt;footer&gt; New </td>
+            <td>定义一个文档底部</td>
+        </tr>
+        <tr>
+            <td> &lt;section&gt; New </td>
+            <td>定义了文档的某个区域</td>
+        </tr>
+        <tr>
+            <td> &lt;article&gt; New </td>
+            <td>定义一个文章内容</td>
+        </tr>
+        <tr>
+            <td> &lt;aside&gt; New </td>
+            <td>定义其所处内容之外的内容。</td>
+        </tr>
+        <tr>
+            <td> &lt;details&gt; New </td>
+            <td>定义了用户可见的或者隐藏的需求的补充细节。</td>
+        </tr>
+        <tr>
+            <td> &lt;dialog&gt; New </td>
+            <td>定义一个对话框或者窗口</td>
+        </tr>
+        <tr>
+            <td> &lt;summary&gt; New </td>
+            <td>定义一个可见的标题。 当用户点击标题时会显示出详细信息。</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="HTML-属性"><a href="#HTML-属性" class="headerlink" title="HTML 属性"></a>HTML 属性</h2><p>New : HTML5 新属性。</p>
+<table>
+    <tbody>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>accesskey</td>
+            <td>设置访问元素的键盘快捷键。</td>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>规定元素的类名（classname）</td>
+        </tr>
+        <tr>
+            <td>contenteditable New </td>
+            <td>规定是否可编辑元素的内容。</td>
+        </tr>
+        <tr>
+            <td>contextmenu New </td>
+            <td>指定一个元素的上下文菜单。当用户右击该元素，出现上下文菜单</td>
+        </tr>
+        <tr>
+            <td>dir</td>
+            <td>设置元素中内容的文本方向。</td>
+        </tr>
+        <tr>
+            <td>draggable New ></td>
+            <td>指定某个元素是否可以拖动</td>
+        </tr>
+        <tr>
+            <td>dropzone New</td>
+            <td>指定是否将数据复制，移动，或链接，或删除</td>
+        </tr>
+        <tr>
+            <td>hidden New</td>
+            <td>hidden 属性规定对元素进行隐藏。</td>
+        </tr>
+        <tr>
+            <td>id</td>
+            <td>规定元素的唯一 id</td>
+        </tr>
+        <tr>
+            <td>lang</td>
+            <td>设置元素中内容的语言代码。</td>
+        </tr>
+        <tr>
+            <td>spellcheck New</td>
+            <td>检测元素是否拼写错误</td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td>规定元素的行内样式（inline style）</td>
+        </tr>
+        <tr>
+            <td>tabindex</td>
+            <td>设置元素的 Tab 键控制次序。</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>规定元素的额外信息（可在工具提示中显示）</td>
+        </tr>
+        <tr>
+            <td>translate New</td>
+            <td>指定是否一个元素的值在页面载入时是否需要翻译</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="HTML-事件"><a href="#HTML-事件" class="headerlink" title="HTML 事件"></a>HTML 事件</h2><table>
+    <tbody>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>onblur</td>
+            <td>当元素失去焦点时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onchange</td>
+            <td>当元素改变时运行脚本</td>
+        </tr>
+        <tr>
+            <td>oncontextmenu New</td>
+            <td>当触发上下文菜单时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onfocus</td>
+            <td>当元素获得焦点时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onformchange New</td>
+            <td>当表单改变时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onforminput New</td>
+            <td>当表单获得用户输入时运行脚本</td>
+        </tr>
+        <tr>
+            <td>oninput New</td>
+            <td>当元素获得用户输入时运行脚本</td>
+        </tr>
+        <tr>
+            <td>oninvalid New</td>
+            <td>当元素无效时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onselect</td>
+            <td>当选取元素时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onsubmit</td>
+            <td>当提交表单时运行脚本</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td> onafterprint New </td>
+            <td>在打印文档之后运行脚本</td>
+        </tr>
+        <tr>
+            <td>onbeforeprint New</td>
+            <td>在文档打印之前运行脚本</td>
+        </tr>
+        <tr>
+            <td>onbeforeonload New</td>
+            <td>在文档加载之前运行脚本</td>
+        </tr>
+        <tr>
+            <td>onblur</td>
+            <td>当窗口失去焦点时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onerror New</td>
+            <td>当错误发生时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onfocus</td>
+            <td>当窗口获得焦点时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onhaschange New</td>
+            <td>当文档改变时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onload</td>
+            <td>当文档加载时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmessage New</td>
+            <td>当触发消息时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onoffline New</td>
+            <td>当文档离线时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ononline New</td>
+            <td>当文档上线时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onpagehide New</td>
+            <td>当窗口隐藏时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onpageshow New</td>
+            <td>当窗口可见时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onpopstate New</td>
+            <td>当窗口历史记录改变时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onredo New</td>
+            <td>当文档执行再执行操作（redo）时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onresize New</td>
+            <td>当调整窗口大小时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onstorage New</td>
+            <td>当文档加载加载时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onundo New</td>
+            <td>当 Web Storage 区域更新时（存储空间中的数据发生变化时）</td>
+        </tr>
+        <tr>
+            <td>onunload New</td>
+            <td>当用户离开文档时运行脚本</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <tbody>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>onkeydown</td>
+            <td>当按下按键时运行脚本</td>
+        </tr>
+        <tr>
+            <td> onkeypress </td>
+            <td>当按下并松开按键时运行脚本</td>
+        </tr>
+        <tr>
+            <td> onkeyup</td>
+            <td>当松开按键时运行脚本</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <tbody>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td> onclick</td>
+            <td>当单击鼠标时运行脚本</td>
+        </tr>
+        <tr>
+            <td> ondblclick</td>
+            <td>当双击鼠标时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondrag New</td>
+            <td>当拖动元素时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondragend New</td>
+            <td>当拖动操作结束时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondragenter New</td>
+            <td>当元素被拖动至有效的拖放目标时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondragleave New</td>
+            <td>当元素离开有效拖放目标时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondragover New</td>
+            <td>当元素被拖动至有效拖放目标上方时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondragstart New</td>
+            <td>当拖动操作开始时运行脚本</td>
+        </tr>
+        <tr>
+            <td>ondrop New</td>
+            <td>当被拖动元素正在被拖放时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmousedown</td>
+            <td>当按下鼠标按钮时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmousemove</td>
+            <td>当鼠标指针移动时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmouseout</td>
+            <td>当鼠标指针移出元素时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmouseover</td>
+            <td>当鼠标指针移至元素之上时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmouseup</td>
+            <td>当松开鼠标按钮时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onmousewheel New</td>
+            <td>当转动鼠标滚轮时运行脚本</td>
+        </tr>
+        <tr>
+            <td>onscroll New</td>
+            <td>当滚动元素滚动元素的滚动条时运行脚本</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>…</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Bootstrap Note</title>
     <url>/2020/04/16/Bootstrap-Note/</url>
     <content><![CDATA[<h1 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h1><h2 id="Bootstrap-简介"><a href="#Bootstrap-简介" class="headerlink" title="Bootstrap 简介"></a>Bootstrap 简介</h2><p><code>bootsrap</code>是基于<code>jQuery</code>的一款前段框架,jQuery 必须在 Bootstrap 之前引入。它需要使用<code>HTML5</code>的 doctype ，Bootstrap3 是以移动设备优先的。<br>为了兼容性更好，需要加上 viewport 的 meta 标签。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bootstrap&#x2F;</span><br><span class="line"></span><br><span class="line">├── dist&#x2F;</span><br><span class="line">│   ├── css&#x2F;</span><br><span class="line">│   ├── js&#x2F;</span><br><span class="line">│   └── fonts&#x2F;</span><br><span class="line">|── docs&#x2F;</span><br><span class="line">|    └── examples&#x2F;</span><br><span class="line">├── fonts&#x2F;</span><br><span class="line">├── less&#x2F;</span><br><span class="line">├── js&#x2F;</span><br><span class="line">│	|── alert.js</span><br><span class="line">│	|── button.js</span><br><span class="line">│	|── carouse.js</span><br><span class="line">│	|── collapse.js</span><br><span class="line">│	|── dropdown.js</span><br><span class="line">│	|── modal.js</span><br><span class="line">│	|── popover.js		&#x2F;&#x2F; 弹出框</span><br><span class="line">│	|── scrollspy.js	&#x2F;&#x2F; 滚动监听</span><br><span class="line">│	|── tab.js</span><br><span class="line">│	|── tooltip.js		&#x2F;&#x2F; 模态框</span><br><span class="line">│	|── transition.js	&#x2F;&#x2F; 过渡效果</span><br></pre></td></tr></table></figure>
+
 <h3 id="基本模板"><a href="#基本模板" class="headerlink" title="基本模板"></a>基本模板</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>		<span class="comment">&lt;!--  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-CN"</span>&gt;</span>		<span class="comment">&lt;!-- 设置默认本地语言 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--  --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span>		<span class="comment">&lt;!-- 兼容 IE edge 的 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span>		<span class="comment">&lt;!-- width 属性控制设备的宽度 --&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">&lt;!-- &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt; --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Bootstrap 101 Template<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Bootstrap --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 --&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!--[if lt IE 9]&gt;</span></span><br><span class="line"><span class="comment">      &lt;script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">      &lt;script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">    &lt;![endif]--&gt;</span></span><br><span class="line">	</span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>你好，世界！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="全局样式"><a href="#全局样式" class="headerlink" title="全局样式"></a>全局样式</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">"Helvetica Neue"</span>, Helvetica, Arial, sans-serif;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.428571429</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#333333</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ffffff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -138,87 +924,9 @@
 <p>progress-bar-success  progress-bar-info … 改变进度条颜色<br>progress-bar-striped 进度条带条纹， progress-bar-striped active 带动画效果</p>
 <h3 id="面版"><a href="#面版" class="headerlink" title="面版"></a>面版</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;panel panel-default&quot;&gt;	&lt;!-- 必须的 --&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;panel-heading&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;panel-title&quot;&gt;Panel title&lt;&#x2F;h3&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;panel-body&quot;&gt;		&lt;!-- 必须的 --&gt;</span><br><span class="line">    Panel content</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;panel-footer&quot;&gt;Panel footer&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h2 id="JavaScript-插件"><a href="#JavaScript-插件" class="headerlink" title="JavaScript 插件"></a>JavaScript 插件</h2><p>bootstrap/js/ 的插件可以单独引入，也可以一次全部引入(即引入bootstrap.min.js)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$(document).off(&#39;.data-api&#39;)	&#x2F;&#x2F; 通过关闭data属性的API禁用所有 bootstrap 插件</span><br><span class="line">$(document).off(&#39;.alert.data-api&#39;)	&#x2F;&#x2F; 通过关闭data属性的API禁用 alert bootstrap 插件</span><br></pre></td></tr></table></figure>
+<p>具体内容查看 <a href="https://v3.bootcss.com/javascript/" target="_blank" rel="noopener">https://v3.bootcss.com/javascript/</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -247,44 +955,45 @@
     <url>/2020/03/24/Computer-Config/</url>
     <content><![CDATA[<p>——–[ 概览 ]———————————————————————————-</p>
 <p>  电脑型号            联想 ThinkPad E550c 笔记本电脑<br>  操作系统            Windows 10 64位 ( DirectX 12 )</p>
-<p>  处理器              英特尔 第四代酷睿 i5-4210U 双核<br>  主板                联想 20E0A00YCD ( Lynx Point-LP )<br>  显卡                AMD Radeon R7 M265 Series ( 2 GB )<br>  内存                4 GB ( 记忆科技 DDR3L 1600MHz )<br>  主硬盘              希捷 ST500LM021-1KJ152 ( 500 GB / 7200 转/分 )<br>  显示器              联想 LEN40B0 ( 15.5 英寸  )<br>  声卡                Conexant SmartAudio HD @ 英特尔 Lynx Point-LP  高保真音频<br>  网卡                英特尔 Ethernet Connection I218-V / 联想</p>
 <p>——–[ 主板 ]———————————————————————————-</p>
-<p>  主板型号            联想 20E0A00YCD<br>  芯片组              Lynx Point-LP<br>  序列号              L1HF5AC0145<br>  主板版本            SDK0K09938 WIN<br>  BIOS版本            联想 J5ET48WW (1.19 )  /  BIOS程序发布日期: 08/27/2015<br>  BIOS的大小          16384 KB</p>
 <p>——–[ 处理器 ]——————————————————————————–</p>
-<p>  处理器              英特尔 第四代酷睿 i5-4210U 双核<br>  速度                2.40 GHz (100 MHz x 24.0)<br>  处理器数量          核心数: 2 / 线程数: 4<br>  核心代号            Haswell<br>  生产工艺            22.0纳米<br>  插槽/插座           BGA1168<br>  一级数据缓存        2 x 32 KB, 8-Way, 64 byte lines<br>  一级代码缓存        2 x 32 KB, 8-Way, 64 byte lines<br>  二级缓存            2 x 256 KB, 8-Way, 64 byte lines<br>  三级缓存            3 MB, 12-Way, 64 byte lines<br>  特征                MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, HTT, EM64T, EIST, Turbo Boost</p>
+<p>  处理器              英特尔 第四代酷睿 i5-4210U 双核<br>  速度                2.40 GHz (100 MHz x 24.0)<br>  处理器数量          核心数: 2 / 线程数: 4<br>  核心代号            Haswell<br>  生产工艺            22.0纳米<br>  插槽/插座           BGA1168<br>  一级数据缓存        2 x 32 KB, 8-Way, 64 byte lines<br>  一级代码缓存        2 x 32 KB, 8-Way, 64 byte lines<br>  二级缓存            2 x 256 KB, 8-Way, 64 byte lines<br>  三级缓存            3 MB, 12-Way, 64 byte lines</p>
 <p>——–[ 硬盘 ]———————————————————————————-</p>
-<p>  产品                希捷 ST500LM021-1KJ152<br>  大小                500 GB<br>  转速                7200 转/分<br>  缓存                32 MB<br>  硬盘已使用          共 1963 次，累计 6523 小时<br>  固件                0002LIM1<br>  接口                SATA III<br>  数据传输率          600.00 MB/秒<br>  特征                S.M.A.R.T,  APM,  48-bit LBA,  NCQ</p>
+<p>  大小                500 GB<br>  转速                7200 转/分<br>  缓存                32 MB<br>  硬盘已使用          共 1963 次，累计 6523 小时</p>
+<p>  接口                SATA III<br>  数据传输率          600.00 MB/秒<br>  特征                S.M.A.R.T,  APM,  48-bit LBA,  NCQ</p>
 <p>——–[ 内存 ]———————————————————————————-</p>
-<p>  ChannelA-DIMM0      记忆科技 DDR3L 1600MHz 4GB<br>  制造日期            2015 年 37 周<br>  型号                7F7F7F7F43 RMT3170ME68F9F1600<br>  序列号              43739109<br>  厂商                Ramaxel<br>  模块位宽:           64 Bits<br>  模块电压:           SSTL 1.35V</p>
+<p>  制造日期            2015 年 37 周<br>  型号                7F7F7F7F43 RMT3170ME68F9F1600<br>  序列号              43739109<br>  厂商                Ramaxel<br>  模块位宽:           64 Bits<br>  模块电压:           SSTL 1.35V</p>
 <p>——–[ 显卡 ]———————————————————————————-</p>
-<p>  显卡                英特尔 Haswell-ULT Integrated Graphics Controller<br>  显存                112 MB<br>  制造商              联想<br>  制造商              Intel<br>  BIOS日期            10/16/20 (非显卡制造日期)<br>  驱动版本            20.19.15.4568<br>  驱动日期            20161216</p>
-<p>  主显卡              AMD Radeon R7 M265 Series<br>  显存                2 GB<br>  频率                核心: 825MHz / 显存: 1000MHz<br>  制造商              AMD<br>  BIOS版本            BR45429.001<br>  BIOS日期            10/16/20 (非显卡制造日期)<br>  驱动版本            22.19.180.1536<br>  驱动日期            12-27-2017</p>
+<p>  显存                112 MB</p>
+<p>  BIOS日期            10/16/20 (非显卡制造日期)</p>
+<p>  驱动日期            20161216</p>
+<p>  BIOS日期            10/16/20 (非显卡制造日期)</p>
+<p>  驱动日期            12-27-2017</p>
 <p>——–[ 显示器 ]——————————————————————————–</p>
-<p>  产品                联想 LEN40B0<br>  厂商                联想<br>  固件程序日期        2013 年 41 周 (非显示器制造日期)<br>  屏幕尺寸            15.5 英寸 (34 厘米 x 19 厘米)<br>  显示比例            宽屏 16 : 9<br>  分辨率              1366 x 768 32 位真彩色<br>  Gamma               2.20<br>  电源管理            Standby, Suspend, Active-Off<br>  最大分辨率          1366 x 768</p>
+<p>  厂商                联想<br>  固件程序日期        2013 年 41 周 (非显示器制造日期)<br>  屏幕尺寸            15.5 英寸 (34 厘米 x 19 厘米)<br>  显示比例            宽屏 16 : 9<br>  分辨率              1366 x 768 32 位真彩色<br>  Gamma               2.20<br>  电源管理            Standby, Suspend, Active-Off<br>  最大分辨率          1366 x 768</p>
 <p>——–[ 其他设备 ]——————————————————————————</p>
-<p>  网卡                英特尔 Ethernet Connection I218-V<br>  制造商              联想</p>
-<p>  无线网卡            瑞昱 Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC<br>  制造商              联想</p>
-<p>  声卡                Conexant SmartAudio HD @ 英特尔 Lynx Point-LP  高保真音频</p>
+<p>  制造商              联想</p>
+<p>  制造商              联想</p>
 <p>  键盘                PS/2 标准键盘<br>  鼠标                ThinkPad UltraNav<br>  鼠标                HID-compliant 鼠标</p>
 <p>  摄像头              Intel(R) RealSense(TM) 3D Camera Virtual Driver</p>
 <p>——–[ PCI设备 ]——————————————————————————-</p>
-<p>  设备                Haswell-ULT DRAM Controller<br>  设备ID              0A04<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to HOST<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Haswell-ULT Integrated Graphics Controller<br>  设备ID              0A16<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Display / VGA<br>  子系统制造商        Lenovo<br>  子系统ID            502117AA</p>
-<p>  设备                Lynx Point-LP USB xHCI HC<br>  设备ID              9C31<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / USB (UHCI)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP HECI #0<br>  设备ID              9C3A<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Simple Communication / Other<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Ethernet Connection I218-V<br>  设备ID              1559<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Network / Ethernet<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP HD Audio Controller<br>  设备ID              9C20<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Multimedia / Hi-definition Audio<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP PCI Express Root Port 1<br>  设备ID              9C10<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备                Lynx Point-LP PCI Express Root Port 3<br>  设备ID              9C14<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备                Lynx Point-LP PCI Express Root Port 5<br>  设备ID              9C18<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备                Lynx Point-LP PCI Express Root Port 6<br>  设备ID              9C1A<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备                Lynx Point-LP USB EHCI #1<br>  设备ID              9C26<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / USB 2.0 (EHCI)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP LPC Controller<br>  设备ID              9C43<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to ISA<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP SATA Controller 1 [AHCI mode]<br>  设备ID              9C03<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Storage / Serial ATA (AHCI 1.0)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP SMBus Controller<br>  设备ID              9C22<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / SMBus Controller<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Lynx Point-LP Thermal<br>  设备ID              9C24<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Data Aquisition &amp; Signal Processing / Other<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备                Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC<br>  设备ID              B723<br>  制造商              Realtek<br>  制造商ID            10EC<br>  类别                Network / Other<br>  子系统制造商        Lenovo<br>  子系统ID            B73617AA</p>
-<p>  设备                Realtek PCIE CardReader<br>  设备ID              5227<br>  制造商              Realtek<br>  制造商ID            10EC<br>  类别                 /<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              0A04<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to HOST<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              0A16<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Display / VGA<br>  子系统制造商        Lenovo<br>  子系统ID            502117AA</p>
+<p>  设备ID              9C31<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / USB (UHCI)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C3A<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Simple Communication / Other<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              1559<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Network / Ethernet<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C20<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Multimedia / Hi-definition Audio<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C10<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
+<p>  设备ID              9C14<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
+<p>  设备ID              9C18<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
+<p>  设备ID              9C1A<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
+<p>  设备ID              9C26<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / USB 2.0 (EHCI)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C43<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to ISA<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C03<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Storage / Serial ATA (AHCI 1.0)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C22<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / SMBus Controller<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              9C24<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Data Aquisition &amp; Signal Processing / Other<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
+<p>  设备ID              B723<br>  制造商              Realtek<br>  制造商ID            10EC<br>  类别                Network / Other<br>  子系统制造商        Lenovo<br>  子系统ID            B73617AA</p>
+<p>  设备ID              5227<br>  制造商              Realtek<br>  制造商ID            10EC<br>  类别                 /<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
 <p>——–[ USB设备 ]——————————————————————————-</p>
 <p>  制造商ID            0BDA<br>  产品ID              B728<br>  类别                224 / 1 / 1<br>  设备                 </p>
 <p>  制造商ID            8086<br>  产品ID              0A66<br>  类别                239 / 2 / 1<br>  设备<br>  版本                USB 3.0</p>
