@@ -72,6 +72,681 @@
     
     
     
+    <article id="post-JavaScript-Note" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/04/19/JavaScript-Note/"
+    >JavaScript Note</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/04/19/JavaScript-Note/" class="article-date">
+  <time datetime="2020-04-19T07:36:31.000Z" itemprop="datePublished">2020-04-19</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="JavaScript-简介"><a href="#JavaScript-简介" class="headerlink" title="JavaScript 简介"></a>JavaScript 简介</h2><p>JavaScript 是解释型脚本语言。区分大小写。在 ## JavaScript 中一切都是对象。数字(Number)、字符串(String)、数组(Array)、日期(Date)，布尔(Boolean)，算数(Math)，正则(RegExp)<br>JavaScript 定义了 5 种原始数据类型：string，number，boolean，null，undefined</p>
+<h2 id="JavaScript-循环"><a href="#JavaScript-循环" class="headerlink" title="JavaScript 循环"></a>JavaScript 循环</h2><ul>
+<li>for - 循环代码块一定的次数</li>
+<li>for/in - 循环遍历对象的属性</li>
+<li>while - 当指定的条件为 true 时循环指定的代码块</li>
+<li>do/while - 同样当指定的条件为 true 时循环指定的代码块</li>
+</ul>
+<p>break 语句用于跳出循环。continue 用于跳过循环中的一个迭代。</p>
+<h2 id="JavaScript-错误"><a href="#JavaScript-错误" class="headerlink" title="JavaScript 错误"></a>JavaScript 错误</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">	&#x2F;&#x2F; test code </span><br><span class="line">&#125; catch &#123;</span><br><span class="line">	&#x2F;&#x2F; throw a Exception</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="JavaScript-对象"><a href="#JavaScript-对象" class="headerlink" title="JavaScript 对象"></a>JavaScript 对象</h2><p>JavaScript 基于 prototype 的，而不是基于类的，绝不会存在类，也不会通过类来创建对象。</p>
+<h3 id="Number-对象"><a href="#Number-对象" class="headerlink" title="Number 对象"></a>Number 对象</h3><p>Number 对象都是64位的。没有数字类型区分。浮点数是不精确的。NaN 是非数字值的特殊值。该属性用于指示某个值不是数字。可用 isNaN() 来判断一个值是否是 NaN </p>
+<p>常用属性：<br>constructor    返回对创建此对象的 Number 函数的引用。</p>
+<p>常用方法：</p>
+<ul>
+<li>toString()    把数字转换为字符串，使用指定的基数。</li>
+<li>valueOf()    返回一个 Number 对象的基本数字值。</li>
+</ul>
+<h3 id="String-对象"><a href="#String-对象" class="headerlink" title="String 对象"></a>String 对象</h3><p>常用属性：<br>length        字符串的长度</p>
+<p>常用方法：</p>
+<ul>
+<li>charAt()    返回在指定位置的字符。</li>
+<li>charCodeAt()    返回在指定的位置的字符的 Unicode 编码。</li>
+<li>concat()    连接字符串。</li>
+<li>indexOf()    检索字符串。</li>
+<li>lastIndexOf()    从后向前搜索字符串。</li>
+<li>match()    找到一个或多个正则表达式的匹配。</li>
+<li>replace()    替换与正则表达式匹配的子串。</li>
+<li>search()    检索与正则表达式相匹配的值。</li>
+<li>slice()    提取字符串的片断，并在新的字符串中返回被提取的部分。</li>
+<li>split()    把字符串分割为字符串数组。</li>
+<li>substr()    从起始索引号提取字符串中指定数目的字符。</li>
+<li>substring()    提取字符串中两个指定的索引号之间的字符。</li>
+<li>toLowerCase()    把字符串转换为小写。</li>
+<li>toUpperCase()    把字符串转换为大写。</li>
+<li>toString()    返回字符串。</li>
+<li>valueOf()    返回某个字符串对象的原始值。</li>
+</ul>
+<h3 id="Array-对象"><a href="#Array-对象" class="headerlink" title="Array 对象"></a>Array 对象</h3><p>常用属性：</p>
+<ul>
+<li>constructor    返回对创建此对象的数组函数的引用。</li>
+<li>length    设置或返回数组中元素的数目。</li>
+<li>prototype    使您有能力向对象添加属性和方法。</li>
+</ul>
+<p>常用方法：</p>
+<ul>
+<li>concat()    连接两个或更多的数组，并返回结果。</li>
+<li>join()    把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。</li>
+<li>pop()    删除并返回数组的最后一个元素</li>
+<li>push()    向数组的末尾添加一个或更多元素，并返回新的长度。</li>
+<li>reverse()    颠倒数组中元素的顺序。</li>
+<li>shift()    删除并返回数组的第一个元素</li>
+<li>slice()    从某个已有的数组返回选定的元素</li>
+<li>sort()    对数组的元素进行排序</li>
+<li>splice()    删除元素，并向数组添加新元素。</li>
+<li>toSource()    返回该对象的源代码。</li>
+<li>toString()    把数组转换为字符串，并返回结果。</li>
+<li>toLocaleString()    把数组转换为本地数组，并返回结果。</li>
+<li>unshift()    向数组的开头添加一个或更多元素，并返回新的长度。</li>
+<li>valueOf()    返回数组对象的原始值</li>
+</ul>
+<h3 id="Date-对象"><a href="#Date-对象" class="headerlink" title="Date 对象"></a>Date 对象</h3><p>常用属性：</p>
+<ul>
+<li>constructor    返回对创建此对象的 Date 函数的引用。</li>
+<li>prototype    使您有能力向对象添加属性和方法。</li>
+</ul>
+<p>常用方法：</p>
+<ul>
+<li><p>Date()    返回当日的日期和时间。</p>
+</li>
+<li><p>getDate()    从 Date 对象返回一个月中的某一天 (1 ~ 31)。</p>
+</li>
+<li><p>getDay()    从 Date 对象返回一周中的某一天 (0 ~ 6)。</p>
+</li>
+<li><p>getMonth()    从 Date 对象返回月份 (0 ~ 11)。</p>
+</li>
+<li><p>getFullYear()    从 Date 对象以四位数字返回年份。</p>
+</li>
+<li><p>getSeconds()    返回 Date 对象的秒数 (0 ~ 59)。</p>
+</li>
+<li><p>getMilliseconds()    返回 Date 对象的毫秒(0 ~ 999)。</p>
+</li>
+<li><p>getTime()    返回 1970 年 1 月 1 日至今的毫秒数。</p>
+</li>
+<li><p>parse()    返回1970年1月1日午夜到指定日期（字符串）的毫秒数。</p>
+</li>
+<li><p>setDate()    设置 Date 对象中月的某一天 (1 ~ 31)。</p>
+</li>
+<li><p>setMonth()    设置 Date 对象中月份 (0 ~ 11)。</p>
+</li>
+<li><p>setFullYear()    设置 Date 对象中的年份（四位数字）。</p>
+</li>
+<li><p>toString()    把 Date 对象转换为字符串。</p>
+</li>
+<li><p>toTimeString()    把 Date 对象的时间部分转换为字符串。</p>
+</li>
+<li><p>toDateString()    把 Date 对象的日期部分转换为字符串。</p>
+</li>
+<li><p>toLocaleString()    根据本地时间格式，把 Date 对象转换为字符串。</p>
+</li>
+<li><p>valueOf()    返回 Date 对象的原始值。</p>
+</li>
+</ul>
+<h3 id="Boolean-对象"><a href="#Boolean-对象" class="headerlink" title="Boolean 对象"></a>Boolean 对象</h3><p>Boolean 对象只有两个值：”true” 或 “false”。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">new Boolean(value);	&#x2F;&#x2F; 当作为一个构造函数（带 new）调用时，它将把它的参数转换成一个布尔值，并返回一个包含该值的 Boolean 对象。</span><br><span class="line">Boolean(value);		&#x2F;&#x2F; 作为函数（不带 new）调用时，Boolean() 只把它的参数转换成一个原始的布尔值，并返回这个值。</span><br></pre></td></tr></table></figure>
+<p>如果省略 value 参数，或者设置为 0、-0、null、””、false、undefined 或 NaN，则该对象设置为 false。否则设置为 true（即使 value 参数是字符串 “false”）。</p>
+<p>常用属性：</p>
+<p>常用方法：<br>toString()    把逻辑值转换为字符串，并返回结果。<br>valueOf()    返回 Boolean 对象的原始值。</p>
+<h3 id="Math-对象"><a href="#Math-对象" class="headerlink" title="Math 对象"></a>Math 对象</h3><p>Math 对象没有构造函数属性。</p>
+<p>常用属性：</p>
+<ul>
+<li>E    返回算术常量 e，即自然对数的底数（约等于2.718）。</li>
+<li>LN2    返回 2 的自然对数（约等于0.693）。</li>
+<li>LN10    返回 10 的自然对数（约等于2.302）。</li>
+<li>LOG2E    返回以 2 为底的 e 的对数（约等于 1.414）。</li>
+<li>LOG10E    返回以 10 为底的 e 的对数（约等于0.434）。</li>
+<li>PI    返回圆周率（约等于3.14159）。</li>
+<li>SQRT1_2    返回返回 2 的平方根的倒数（约等于 0.707）。</li>
+<li>SQRT2    返回 2 的平方根（约等于 1.414）。</li>
+</ul>
+<p>常用方法：</p>
+<ul>
+<li>abs(x)    返回数的绝对值。</li>
+<li>acos(x)    返回数的反余弦值。</li>
+<li>asin(x)    返回数的反正弦值。</li>
+<li>atan(x)    以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。</li>
+<li>atan2(y,x)    返回从 x 轴到点 (x,y) 的角度（介于 -PI/2 与 PI/2 弧度之间）。</li>
+<li>ceil(x)    对数进行上舍入。</li>
+<li>cos(x)    返回数的余弦。</li>
+<li>exp(x)    返回 e 的指数。</li>
+<li>floor(x)    对数进行下舍入。</li>
+<li>log(x)    返回数的自然对数（底为e）。</li>
+<li>max(x,y)    返回 x 和 y 中的最高值。</li>
+<li>min(x,y)    返回 x 和 y 中的最低值。</li>
+<li>pow(x,y)    返回 x 的 y 次幂。</li>
+<li>random()    返回 0 ~ 1 之间的随机数。</li>
+<li>round(x)    把数四舍五入为最接近的整数。</li>
+<li>sin(x)    返回数的正弦。</li>
+<li>sqrt(x)    返回数的平方根。</li>
+<li>tan(x)    返回角的正切。</li>
+<li>toSource()    返回该对象的源代码。</li>
+<li>valueOf()    返回 Math 对象的原始值。</li>
+</ul>
+<h3 id="RegExp-对象"><a href="#RegExp-对象" class="headerlink" title="RegExp 对象"></a>RegExp 对象</h3><p>修饰符<br>i    执行对大小写不敏感的匹配。<br>g    执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。<br>m    执行多行匹配。</p>
+<p>方括号范围<br>[abc]    查找方括号之间的任何字符。<br>[^abc]    查找任何不在方括号之间的字符。<br>[0-9]    查找任何从 0 至 9 的数字。<br>[a-z]    查找任何从小写 a 到小写 z 的字符。<br>[A-Z]    查找任何从大写 A 到大写 Z 的字符。<br>[A-z]    查找任何从大写 A 到小写 z 的字符。<br>[adgk]    查找给定集合内的任何字符。<br>[^adgk]    查找给定集合外的任何字符。<br>(red|blue|green)    查找任何指定的选项。</p>
+<p>元字符</p>
+<p>.    查找单个字符，除了换行和行结束符。<br>\w    查找单词字符。<br>\W    查找非单词字符。<br>\d    查找数字。<br>\D    查找非数字字符。<br>\s    查找空白字符。<br>\S    查找非空白字符。<br>\b    匹配单词边界。<br>\B    匹配非单词边界。<br>\0    查找 NUL 字符。<br>\n    查找换行符。<br>\f    查找换页符。<br>\r    查找回车符。<br>\t    查找制表符。<br>\v    查找垂直制表符。<br>\xxx    查找以八进制数 xxx 规定的字符。<br>\xdd    查找以十六进制数 dd 规定的字符。<br>\uxxxx    查找以十六进制数 xxxx 规定的 Unicode 字符。</p>
+<p>量词<br>n+    匹配任何包含至少一个 n 的字符串。<br>n*    匹配任何包含零个或多个 n 的字符串。<br>n?    匹配任何包含零个或一个 n 的字符串。<br>n{X}    匹配包含 X 个 n 的序列的字符串。<br>n{X,Y}    匹配包含 X 至 Y 个 n 的序列的字符串。<br>n{X,}    匹配包含至少 X 个 n 的序列的字符串。<br>n$    匹配任何结尾为 n 的字符串。<br>^n    匹配任何开头为 n 的字符串。<br>?=n    匹配任何其后紧接指定字符串 n 的字符串。<br>?!n    匹配任何其后没有紧接指定字符串 n 的字符串。</p>
+<h3 id="全局对象"><a href="#全局对象" class="headerlink" title="全局对象"></a>全局对象</h3><p>全局对象的全局属性和函数可用于所有内建的 JavaScript 对象。</p>
+<p>全局属性<br>Infinity    代表正的无穷大的数值。<br>java    代表 java.* 包层级的一个 JavaPackage。<br>NaN    指示某个值是不是数字值。<br>Packages    根 JavaPackage 对象。<br>undefined    指示未定义的值。</p>
+<p>全局函数<br>decodeURI()    解码某个编码的 URI。<br>decodeURIComponent()    解码一个编码的 URI 组件。<br>encodeURI()    把字符串编码为 URI。<br>encodeURIComponent()    把字符串编码为 URI 组件。<br>escape()    对字符串进行编码。<br>eval()    计算 JavaScript 字符串，并把它作为脚本代码来执行。<br>getClass()    返回一个 JavaObject 的 JavaClass。<br>isFinite()    检查某个值是否为有穷大的数。<br>isNaN()    检查某个值是否是数字。<br>Number()    把对象的值转换为数字。<br>parseFloat()    解析一个字符串并返回一个浮点数。<br>parseInt()    解析一个字符串并返回一个整数。<br>String()    把对象的值转换为字符串。<br>unescape()    对由 escape() 编码的字符串进行解码。</p>
+<h2 id="Window-对象"><a href="#Window-对象" class="headerlink" title="Window 对象"></a>Window 对象</h2><p>Window 对象属性</p>
+<ul>
+<li>closed    返回窗口是否已被关闭。</li>
+<li>defaultStatus    设置或返回窗口状态栏中的默认文本。</li>
+<li>document    对 Document 对象的只读引用。请参阅 Document 对象。</li>
+<li>history    对 History 对象的只读引用。请参数 History 对象。</li>
+<li>innerheight    返回窗口的文档显示区的高度。</li>
+<li>innerwidth    返回窗口的文档显示区的宽度。</li>
+<li>length    设置或返回窗口中的框架数量。</li>
+<li>location    用于窗口或框架的 Location 对象。请参阅 Location 对象。</li>
+<li>name    设置或返回窗口的名称。</li>
+<li>Navigator    对 Navigator 对象的只读引用。请参数 Navigator 对象。</li>
+<li>opener    返回对创建此窗口的窗口的引用。</li>
+<li>outerheight    返回窗口的外部高度。</li>
+<li>outerwidth    返回窗口的外部宽度。</li>
+<li>pageXOffset    设置或返回当前页面相对于窗口显示区左上角的 X 位置。</li>
+<li>pageYOffset    设置或返回当前页面相对于窗口显示区左上角的 Y 位置。</li>
+<li>parent    返回父窗口。</li>
+<li>Screen    对 Screen 对象的只读引用。请参数 Screen 对象。</li>
+<li>self    返回对当前窗口的引用。等价于 Window 属性。</li>
+<li>status    设置窗口状态栏的文本。</li>
+<li>top    返回最顶层的先辈窗口。</li>
+<li>window    window 属性等价于 self 属性，它包含了对窗口自身的引用。</li>
+<li>screenLeft  screenTop  screenX  screenY  只读整数。声明了窗口的左上角在屏幕上的的 x 坐标和 y 坐标。IE、Safari 和 Opera 支持 screenLeft 和 screenTop，而 Firefox 和 Safari 支持 screenX 和 screenY。</li>
+</ul>
+<p>Window 对象方法</p>
+<p>Window 对象和 Navigator 、Screen，history，Location 对象， 都是 Brower 对象。<br>还有 DOM Document， DOM Element， DOM Attribute, DOM Event 都是 HTML DOM 对象。</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-jQuery-Note" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/04/19/jQuery-Note/"
+    >jQuery Note</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/04/19/jQuery-Note/" class="article-date">
+  <time datetime="2020-04-19T06:07:53.000Z" itemprop="datePublished">2020-04-19</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h1><h2 id="jQuery-简介"><a href="#jQuery-简介" class="headerlink" title="jQuery 简介"></a>jQuery 简介</h2><p>jQuery 是一个 js 库。使用 script 标签引入 html 文档。使用方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function()&#123;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F; jQuery methods go here...</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line">或者</span><br><span class="line">$(function()&#123;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F; jQuery methods go here...</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="jQuery-HTML"><a href="#jQuery-HTML" class="headerlink" title="jQuery HTML"></a>jQuery HTML</h2><h3 id="用于获取-设置-DOM-内容或属性的-jQuery-方法："><a href="#用于获取-设置-DOM-内容或属性的-jQuery-方法：" class="headerlink" title="用于获取/设置 DOM 内容或属性的 jQuery 方法："></a>用于获取/设置 DOM 内容或属性的 jQuery 方法：</h3><p>text() - 设置或返回所选元素的文本内容<br>html() - 设置或返回所选元素的内容（包括 HTML 标记）<br>val() - 设置或返回表单字段的值<br>attr() - 方法用于设置或获取属性值。</p>
+<h3 id="用于添加新内容的四个-jQuery-方法："><a href="#用于添加新内容的四个-jQuery-方法：" class="headerlink" title="用于添加新内容的四个 jQuery 方法："></a>用于添加新内容的四个 jQuery 方法：</h3><ul>
+<li>append() - 在被选元素的结尾插入内容</li>
+<li>prepend() - 在被选元素的开头插入内容</li>
+<li>after() - 在被选元素之后插入内容</li>
+<li>before() - 在被选元素之前插入内容</li>
+</ul>
+<h3 id="删除元素和内容的-jQuery-方法："><a href="#删除元素和内容的-jQuery-方法：" class="headerlink" title="删除元素和内容的 jQuery 方法："></a>删除元素和内容的 jQuery 方法：</h3><ul>
+<li>remove() - 删除被选元素（及其子元素）</li>
+<li>empty() - 从被选元素中删除子元素</li>
+</ul>
+<h3 id="操作-css-的-jQuery-方法："><a href="#操作-css-的-jQuery-方法：" class="headerlink" title="操作 css 的 jQuery 方法："></a>操作 css 的 jQuery 方法：</h3><ul>
+<li>addClass()          向被选元素添加一个或多个类</li>
+<li>removeClass()      从被选元素删除一个或多个类</li>
+<li>toggleClass()      对被选元素进行添加/删除类的切换操作</li>
+<li>css()         设置或返回样式属性</li>
+</ul>
+<h3 id="处理尺寸的-jQuery-方法："><a href="#处理尺寸的-jQuery-方法：" class="headerlink" title="处理尺寸的 jQuery 方法："></a>处理尺寸的 jQuery 方法：</h3><ul>
+<li>width()    设置或返回元素的宽度（不包括内边距、边框或外边距）</li>
+<li>height()    设置或返回元素的高度（不包括内边距、边框或外边距）</li>
+<li>innerWidth()    返回元素的宽度（包括内边距）</li>
+<li>innerHeight()    返回元素的高度（包括内边距）</li>
+<li>outerWidth()    返回元素的宽度（包括内边距和边框）</li>
+<li>outerHeight()    返回元素的高度（包括内边距和边框）</li>
+</ul>
+<h3 id="jQuery-遍历祖先的方法："><a href="#jQuery-遍历祖先的方法：" class="headerlink" title="jQuery 遍历祖先的方法："></a>jQuery 遍历祖先的方法：</h3><ul>
+<li>parent()        返回被选元素的直接父元素。返回的是个集合，如果被选元素有多个，那么返回的集合中也有多个。</li>
+<li>parents()        返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (<html>)。</li>
+<li>parentsUntil()    返回介于两个给定元素之间的所有祖先元素。</li>
+</ul>
+<h3 id="jQuery-遍历后代的方法："><a href="#jQuery-遍历后代的方法：" class="headerlink" title="jQuery 遍历后代的方法："></a>jQuery 遍历后代的方法：</h3><ul>
+<li>children()    返回被选元素的所有直接子元素。</li>
+<li>child()        返回被选元素的后代元素，一路向下直到最后一个后代。</li>
+<li>find()</li>
+</ul>
+<h3 id="jQuery-遍历同胞的方法："><a href="#jQuery-遍历同胞的方法：" class="headerlink" title="jQuery 遍历同胞的方法："></a>jQuery 遍历同胞的方法：</h3><ul>
+<li>each()    为每个匹配元素执行函数</li>
+<li>siblings()        返回被选元素的所有同胞元素。</li>
+<li>prev()</li>
+<li>prevAll()        </li>
+<li>prevUntil()        </li>
+<li>next()            </li>
+<li>nextAll()        返回被选元素的所有跟随的同胞元素。</li>
+<li>nextUntil()        返回介于两个给定参数之间的所有跟随的同胞元素。</li>
+</ul>
+<h3 id="jQuery-遍历给定范围的方法："><a href="#jQuery-遍历给定范围的方法：" class="headerlink" title="jQuery 遍历给定范围的方法："></a>jQuery 遍历给定范围的方法：</h3><ul>
+<li><p>first()        返回被选元素的首个元素</p>
+</li>
+<li><p>last()        </p>
+</li>
+<li><p>eq()            返回被选元素中带有指定索引号的元素</p>
+</li>
+<li><p>not()         返回不匹配标准的所有元素</p>
+</li>
+</ul>
+<h2 id="jQuery-选择器"><a href="#jQuery-选择器" class="headerlink" title="jQuery 选择器"></a>jQuery 选择器</h2><table>
+    <tbody>
+        <tr>
+            <th>选择器</th>
+            <th>实例</th>
+            <th>选取</th>
+        </tr>
+        <tr>
+            <td><a href="#">.<em>class,</em>.<em>class</em></a></td>
+            <td>$(".intro,.demo")</td>
+            <td>选取 class 为 "intro" 或 "demo" 的所有元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:first</a></td>
+            <td>$("p:first")</td>
+            <td>第一个 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:last</a></td>
+            <td>$("p:last")</td>
+            <td>最后一个 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:even</a></td>
+            <td>$("tr:even")</td>
+            <td>所有偶数 &lt;tr&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:odd</a></td>
+            <td>$("tr:odd")</td>
+            <td>所有奇数 &lt;tr&gt; 元素</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#">:first-child</a></td>
+            <td>$("p:first-child")</td>
+            <td>属于其父元素的第一个子元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:first-of-type</a></td>
+            <td>$("p:first-of-type")</td>
+            <td>属于其父元素的第一个 &lt;p&gt; 元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:last-child</a></td>
+            <td>$("p:last-child")</td>
+            <td>属于其父元素的最后一个子元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:last-of-type</a></td>
+            <td>$("p:last-of-type")</td>
+            <td>属于其父元素的最后一个 &lt;p&gt; 元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:nth-child(<em>n</em>)</a></td>
+            <td>$("p:nth-child(2)")</td>
+            <td>属于其父元素的第二个子元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:nth-last-child(<em>n</em>)</a></td>
+            <td>$("p:nth-last-child(2)")</td>
+            <td>属于其父元素的第二个子元素的所有 &lt;p&gt; 元素，从最后一个子元素开始计数</td>
+        </tr>
+        <tr>
+            <td><a href="#">:nth-of-type(<em>n</em>)</a></td>
+            <td>$("p:nth-of-type(2)")</td>
+            <td>属于其父元素的第二个 &lt;p&gt; 元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:nth-last-of-type(<em>n</em>)</a></td>
+            <td>$("p:nth-last-of-type(2)")</td>
+            <td>属于其父元素的第二个 &lt;p&gt; 元素的所有 &lt;p&gt; 元素，从最后一个子元素开始计数</td>
+        </tr>
+        <tr>
+            <td><a href="#">:only-child</a></td>
+            <td>$("p:only-child")</td>
+            <td>属于其父元素的唯一子元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:only-of-type</a></td>
+            <td>$("p:only-of-type")</td>
+            <td>属于其父元素的特定类型的唯一子元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#">parent &gt; child</a></td>
+            <td>$("div &gt; p")</td>
+            <td>&lt;div&gt; 元素的直接子元素的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">parent descendant</a></td>
+            <td>$("div p")</td>
+            <td>&lt;div&gt; 元素的后代的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">element + next</a></td>
+            <td>$("div + p")</td>
+            <td>每个 &lt;div&gt; 元素相邻的下一个 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">element ~ siblings</a></td>
+            <td>$("div ~ p")</td>
+            <td>&lt;div&gt; 元素同级的所有 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#">:eq(<em>index</em>)</a></td>
+            <td>$("ul li:eq(3)")</td>
+            <td>列表中的第四个元素（index 值从 0 开始）</td>
+        </tr>
+        <tr>
+            <td><a href="#">:gt(<em>no</em>)</a></td>
+            <td>$("ul li:gt(3)")</td>
+            <td>列举 index 大于 3 的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:lt(<em>no</em>)</a></td>
+            <td>$("ul li:lt(3)")</td>
+            <td>列举 index 小于 3 的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:not(<em>selector</em>)</a></td>
+            <td>$("input:not(:empty)")</td>
+            <td>所有不为空的输入元素</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#">:header</a></td>
+            <td>$(":header")</td>
+            <td>所有标题元素 &lt;h1&gt;, &lt;h2&gt; ...</td>
+        </tr>
+        <tr>
+            <td><a href="#">:animated</a></td>
+            <td>$(":animated")</td>
+            <td>所有动画元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:focus</a></td>
+            <td>$(":focus")</td>
+            <td>当前具有焦点的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:contains(<em>text</em>)</a></td>
+            <td>$(":contains('Hello')")</td>
+            <td>所有包含文本 "Hello" 的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:has(<em>selector</em>)</a></td>
+            <td>$("div:has(p)")</td>
+            <td>所有包含有 &lt;p&gt; 元素在其内的 &lt;div&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:empty</a></td>
+            <td>$(":empty")</td>
+            <td>所有空元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:parent</a></td>
+            <td>$(":parent")</td>
+            <td>所有是另一个元素的父元素的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:hidden</a></td>
+            <td>$("p:hidden")</td>
+            <td>所有隐藏的 &lt;p&gt; 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:visible</a></td>
+            <td>$("table:visible")</td>
+            <td>所有可见的表格</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><a href="#">[<em>attribute</em>]</a></td>
+            <td>$("[href]")</td>
+            <td>所有带有 href 属性的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<em>attribute</em>=<em>value</em>]</a></td>
+            <td>$("[href='default.htm']")</td>
+            <td>所有带有 href 属性且值等于 "default.htm" 的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<em>attribute</em>!=<em>value</em>]</a></td>
+            <td>$("[href!='default.htm']")</td>
+            <td>所有带有 href 属性且值不等于 "default.htm" 的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<em>attribute</em>$=<em>value</em>]</a></td>
+            <td>$("[href$='.jpg']")</td>
+            <td>所有带有 href 属性且值以 ".jpg" 结尾的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<i>attribute</i>|=<i>value</i>]</a></td>
+            <td>$("[title|='Tomorrow']")</td>
+            <td>所有带有 title 属性且值等于 'Tomorrow' 或者以 'Tomorrow' 后跟连接符作为开头的字符串</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<i>attribute</i>^=<i>value</i>]</a></td>
+            <td>$("[title^='Tom']")</td>
+            <td>所有带有 title 属性且值以 "Tom" 开头的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<i>attribute</i>~=<i>value</i>]</a></td>
+            <td>$("[title~='hello']")</td>
+            <td>所有带有 title 属性且值包含单词 "hello" 的元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">[<i>attribute*</i>=<i>value</i>]</a></td>
+            <td>$("[title*='hello']")</td>
+            <td>所有带有 title 属性且值包含字符串 "hello" 的元素</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><a href="#">:file</a></td>
+            <td>$(":file")</td>
+            <td>所有带有 type="file" 的 input 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:enabled</a></td>
+            <td>$(":enabled")</td>
+            <td>所有启用的 input 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:disabled</a></td>
+            <td>$(":disabled")</td>
+            <td>所有禁用的 input 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:selected</a></td>
+            <td>$(":selected")</td>
+            <td>所有选定的 input 元素</td>
+        </tr>
+        <tr>
+            <td><a href="#">:checked</a></td>
+            <td>$(":checked")</td>
+            <td>所有选中的 input 元素</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 id="jQuery-主要事件方法"><a href="#jQuery-主要事件方法" class="headerlink" title="jQuery 主要事件方法"></a>jQuery 主要事件方法</h2><ul>
+<li>bind()    向元素添加事件处理程序</li>
+<li>blur()    添加/触发 blur 事件</li>
+<li>change()        添加/触发 change 事件</li>
+<li>click()        添加/触发 click 事件</li>
+<li>dblclick()        添加/触发 double click 事件</li>
+<li>delegate()        向匹配元素的当前或未来的子元素添加处理程序</li>
+<li>event.stopPropagation()    阻止事件向上冒泡到 DOM 树，阻止任何父处理程序被事件通知</li>
+<li>focus()        添加/触发 focus 事件</li>
+<li>focusin()        添加事件处理程序到 focusin 事件</li>
+<li>focusout()    添加事件处理程序到 focusout 事件</li>
+<li>hover()        添加两个事件处理程序到 hover 事件</li>
+<li>keydown()        添加/触发 keydown 事件</li>
+<li>keypress()    添加/触发 keypress 事件</li>
+<li>keyup()        添加/触发 keyup 事件</li>
+<li>live()        在版本 1.9 中被移除。添加一个或多个事件处理程序到当前或未来的被选元素</li>
+<li>on()        向元素添加事件处理程序</li>
+<li>off()        移除通过 on() 方法添加的事件处理程序</li>
+<li>ready()    规定当 DOM 完全加载时要执行的函数</li>
+<li>resize()    添加/触发 resize 事件</li>
+<li>scroll()    添加/触发 scroll 事件</li>
+<li>select()    添加/触发 select 事件</li>
+<li>submit()    添加/触发 submit 事件</li>
+</ul>
+<h2 id="jQuery-AJAX"><a href="#jQuery-AJAX" class="headerlink" title="jQuery AJAX"></a>jQuery AJAX</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">	async:	&#x2F;&#x2F; default true</span><br><span class="line">	cache:	&#x2F;&#x2F; default true</span><br><span class="line">	url: </span><br><span class="line">	dataType:</span><br><span class="line">	data:</span><br><span class="line">	type:</span><br><span class="line">	beforeSend: function()&#123;&#125;</span><br><span class="line">	success: function()&#123;&#125;</span><br><span class="line">	error:	function()&#123;&#125;</span><br><span class="line">	complete: function()&#123;&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-HTML5" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -1742,73 +2417,14 @@
 
 </article>
     
-    <article id="post-hello-world" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/03/20/hello-world/"
-    >Hello World</a> 
-</h2>
- 
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/03/20/hello-world/" class="article-date">
-  <time datetime="2020-03-20T10:23:06.587Z" itemprop="datePublished">2020-03-20</time>
-</a>
-      
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <p>你好，世界！<br>很荣幸有机会来到这个星球。我很珍惜！很感恩！</p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
   </article>
   
 
+  
+  <nav class="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+  </nav>
   
 </section>
 </div>
