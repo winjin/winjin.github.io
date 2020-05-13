@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>delayed message queue</title>
+    <url>/2020/05/13/delayed-message-queue/</url>
+    <content><![CDATA[<h1 id="Time-round"><a href="#Time-round" class="headerlink" title="Time round"></a>Time round</h1><h2 id="延时消息队列-（时间轮）"><a href="#延时消息队列-（时间轮）" class="headerlink" title="延时消息队列 （时间轮）"></a>延时消息队列 （时间轮）</h2><p><img src="/images/wx_20200513190534.jpg," alt="手画的图--时间轮" title="时间轮"></p>
+<ul>
+<li>本质上是一个长度为3600的数组。每格<code>1s</code>，正好代表一小时。当然可以是其他长度。</li>
+<li>有个重要的参数就是  圈数 cycle number 定时5个小时执行，就是5圈后的3600</li>
+</ul>
+<h2 id="各个功能模块"><a href="#各个功能模块" class="headerlink" title="各个功能模块"></a>各个功能模块</h2><ul>
+<li>一个模块 循环时间轮，读取每个任务</li>
+<li>一个模块 根据实际业务，添加任务到轮中</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>queue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript Note</title>
     <url>/2020/04/19/JavaScript-Note/</url>
     <content><![CDATA[<h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="JavaScript-简介"><a href="#JavaScript-简介" class="headerlink" title="JavaScript 简介"></a>JavaScript 简介</h2><p>JavaScript 是解释型脚本语言。区分大小写。在 ## JavaScript 中一切都是对象。数字(Number)、字符串(String)、数组(Array)、日期(Date)，布尔(Boolean)，算数(Math)，正则(RegExp)<br>JavaScript 定义了 5 种原始数据类型：string，number，boolean，null，undefined</p>
