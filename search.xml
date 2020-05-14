@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>InnoDB note</title>
+    <url>/2020/05/13/InnoDB-note/</url>
+    <content><![CDATA[<h1 id="MySQL-InnoDB-引擎"><a href="#MySQL-InnoDB-引擎" class="headerlink" title="MySQL InnoDB 引擎"></a>MySQL InnoDB 引擎</h1><h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><p>MySQL 需要是三个部分： 连接客户端的各种连接器，数据存储和日志，MySQL服务</p>
+<h2 id="InnoDB"><a href="#InnoDB" class="headerlink" title="InnoDB"></a>InnoDB</h2><p>InnoDB内存结构包含四大核心组件：<br>1 缓冲池(Buffer Pool)；<br>2 写缓冲(Change Buffer)；<br>3 自适应哈希索引(Adaptive Hash Index)；<br>4 日志缓冲(Log Buffer)；</p>
+]]></content>
+      <tags>
+        <tag>MySQL, InnoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>session sync</title>
+    <url>/2020/05/13/session-sync/</url>
+    <content><![CDATA[<h1 id="session-为啥需要同步"><a href="#session-为啥需要同步" class="headerlink" title="session 为啥需要同步"></a>session 为啥需要同步</h1><p>一定是因为有多台<code>server</code>。这样不能保证用户http请求每次都能正好请求到同一台服务器。所以需要把session同步到每一台server中。只是同步需要时间，有个时间差。保存许多重复的数据，有些占内存。</p>
+<h1 id="利用cookie保存session"><a href="#利用cookie保存session" class="headerlink" title="利用cookie保存session"></a>利用<code>cookie</code>保存session</h1><p>把<code>session</code>保存到<code>cookie</code>中，每个客服端只保存自己的。这样每次请求都在<code>cookie</code>中带着<code>session</code>，不安全。</p>
+<h1 id="利用NGINX反向代理服务器"><a href="#利用NGINX反向代理服务器" class="headerlink" title="利用NGINX反向代理服务器"></a>利用NGINX反向代理服务器</h1><p>多台web服务器利用NGINX反向代理服务器来实现均衡的，正好在NGINX反向代理服务器中，根据用户IP让同一个用户的请求落到同一个web服务器上。只要配置好NGINX就行。</p>
+<h1 id="保存到数据库或者缓存中"><a href="#保存到数据库或者缓存中" class="headerlink" title="保存到数据库或者缓存中"></a>保存到数据库或者缓存中</h1><p>把session保存到数据库或者缓存中，在业务代码中请求每个用户的session</p>
+]]></content>
+      <tags>
+        <tag>server, session</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>delayed message queue</title>
     <url>/2020/05/13/delayed-message-queue/</url>
     <content><![CDATA[<h1 id="Time-round"><a href="#Time-round" class="headerlink" title="Time round"></a>Time round</h1><h2 id="延时消息队列-（时间轮）"><a href="#延时消息队列-（时间轮）" class="headerlink" title="延时消息队列 （时间轮）"></a>延时消息队列 （时间轮）</h2><p><img src="/images/wx_20200513190534.jpg," alt="手画的图--时间轮" title="时间轮"></p>

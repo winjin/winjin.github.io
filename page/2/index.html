@@ -72,6 +72,290 @@
     
     
     
+    <article id="post-Hexo-note" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/03/23/Hexo-note/"
+    >Hexo note</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/03/23/Hexo-note/" class="article-date">
+  <time datetime="2020-03-23T11:36:03.000Z" itemprop="datePublished">2020-03-23</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="Hexo-建站"><a href="#Hexo-建站" class="headerlink" title="Hexo 建站"></a>Hexo 建站</h2><p><code>Hexo</code>是一个博客框架，默认使用<code>Markdown</code>作为引擎解析文章，生成静态 html 文件。<br>安装 hexo 之前需要安装有 Node.js 和 Git。</p>
+<p><img src="/images/hexo_1.png" alt="hexo" title="hexo"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli    &#x2F;&#x2F; 全局安装 hexo</span><br><span class="line">$ npm install hexo           &#x2F;&#x2F; 局部安装 hexo</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo version    &#x2F;&#x2F; 显示 hexo 版本信息</span><br></pre></td></tr></table></figure>
+<p><img src="/images/hexo_2.png" alt="check version" title="hexo"></p>
+<p>使用 hexo 命令建站</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;	&#x2F;&#x2F; 这个 folder 就是站点的开始的文件夹</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p><img src="/images/hexo_3.png" alt="hexo init" title="hexo init"></p>
+<p><img src="/images/hexo_4.png" alt="hexo" title="hexo"></p>
+<p>之后你可以看到一些目录和文件,主要有：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   └── _posts</span><br><span class="line">|   └── images</span><br><span class="line">├── public</span><br><span class="line">|   └── _posts</span><br><span class="line">|   └── images</span><br><span class="line">├── themes</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br></pre></td></tr></table></figure>
+
+<p><code>source\_posts\</code> 这个目录下就是你新建的 MD 文件的存放目录。<code>_config.yml</code>是配置文件，里面有关于此站点的所有设置。</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>使用 <code>hexo init</code>就可以在当前的目录新建一个站点了，及时不设置<code>_config.yml</code>文件，也是可以开始写文章的。默认有个 hello world 的模板。可以直接建.md文件<br>或者使用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;		&#x2F;&#x2F; 默认式 post 布局</span><br><span class="line">$ hexo new &quot;About me&quot;</span><br><span class="line">$ hexo new &quot;Markdown List&quot;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/hexo_5.png" alt="hexo new " title="hexo new"></p>
+<p>如果使用了其他布局，之后需要用<code>hexo publish [layout] &lt;title&gt;</code>命令，把文章发布到 post 布局</p>
+<h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p><img src="/images/hexo_6.png" alt="hexo server " title="hexo server"></p>
+<h2 id="部署到-github"><a href="#部署到-github" class="headerlink" title="部署到 github"></a>部署到 github</h2><p>打开<code>_config.yml</code>文件，在 deploy 部分做配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repository: https:&#x2F;&#x2F;github.com&#x2F;winjin&#x2F;winjin.github.io</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
+
+<p>然后执行命令：<code>npm install hexo-deployer-git --save</code><br>再执行命令：<code>hexo deploy</code><br>由于没有使用 SSH 所以上条命令执行过程中需要输入你 github 的用户名和密码，然后 github pages 就可以用了。</p>
+<p>到目前为止，虽然，主题没有设置，一些配置没有更改，但是基本可以使用了。以后写文章到部署到线上，大致会是这样一个过程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;article name&quot;		&#x2F;&#x2F; 新建一个 .md 文件</span><br><span class="line">使用编辑器打开 article-name.md 写你的文章</span><br><span class="line">hexo server		&#x2F;&#x2F; 开启本地服务，查看调试效果</span><br><span class="line">hexo clean		&#x2F;&#x2F; 会把 public 目录清空</span><br><span class="line">hexo generate	&#x2F;&#x2F; 生成静态文件</span><br><span class="line">hexo deploy		&#x2F;&#x2F; 部署到 github 又需要输入 username 和 password，除非使用你 SSH</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-Markdown-List" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/03/20/Markdown-List/"
+    >Markdown List</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/03/20/Markdown-List/" class="article-date">
+  <time datetime="2020-03-20T10:58:53.000Z" itemprop="datePublished">2020-03-20</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
+<li>正常字体</li>
+<li><em>斜体</em> <em>斜体</em></li>
+<li><strong>加粗</strong></li>
+<li><del>删除线</del></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">无</span><br><span class="line">*斜体*  _斜体_</span><br><span class="line">**加粗** </span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<p>邮件<br><a href="mailto:&#97;&#x75;&#116;&#111;&#109;&#97;&#116;&#105;&#99;&#119;&#106;&#x40;&#49;&#x36;&#51;&#x2e;&#99;&#111;&#109;">&#97;&#x75;&#116;&#111;&#109;&#97;&#116;&#105;&#99;&#119;&#106;&#x40;&#49;&#x36;&#51;&#x2e;&#99;&#111;&#109;</a></p>
+<h2 id="无、有序列表"><a href="#无、有序列表" class="headerlink" title="无、有序列表"></a>无、有序列表</h2><p>无序列表</p>
+<ul>
+<li>此字左边的-和几个空格</li>
+</ul>
+<ul>
+<li>此字左边的+和几个空格</li>
+</ul>
+<ul>
+<li>此字左边的*和几个空格</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 此字左边的-和几个空格</span><br><span class="line">+ 此字左边的+和几个空格</span><br><span class="line">* 此字左边的*和几个空格</span><br></pre></td></tr></table></figure>
+
+<p>有序列表</p>
+<p>1.此字左边的1和.<br>3. 此字左边的2和.<br>5.  此字左边的3和点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.此字左边的1和.</span><br><span class="line">3. 此字左边的2和.</span><br><span class="line">5.  此字左边的3和点</span><br></pre></td></tr></table></figure>
+
+<p>列表嵌套  上一级和下一级之间输入三个空格</p>
+<ul>
+<li>一级A<ol>
+<li>二级A</li>
+<li>二级B</li>
+<li>二级C<ul>
+<li>三级A</li>
+<li>三级B</li>
+</ul>
+<ul>
+<li>三级C</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>一级B</li>
+<li>一级C<ul>
+<li>还是二级A</li>
+</ul>
+<ul>
+<li>还是二级C</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">+ 一级A</span><br><span class="line">   1. 二级A</span><br><span class="line">   8. 二级B</span><br><span class="line">   3. 二级C</span><br><span class="line">      - 三级A</span><br><span class="line">	  - 三级B</span><br><span class="line">	  * 三级C</span><br><span class="line">- 一级B</span><br><span class="line">- 一级C</span><br><span class="line">   + 还是二级A</span><br><span class="line">   - 还是二级C</span><br></pre></td></tr></table></figure>
+
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>Markdown 使用 &gt; 来表示引用。把<code>&gt;</code>放到每一行的开始，加个空格即可。<br>也可以只在一整段文件的第一行开始加<code>&gt;</code>,其他行省略。<br>输入两个<code>&gt; &gt;</code>表示嵌套的二级引用。引用的区块内也可以使用其他的 Markdown 语法。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; Markdown 使用 &gt; 来表示引用。把&#96;&gt;&#96;放到每一行的开始，加个空格即可。</span><br><span class="line">&gt; 也可以只在一整段文件的第一行开始加&#96;&gt;&#96;,其他行省略。</span><br><span class="line">&gt; 输入两个&#96;&gt; &gt; &#96;表示嵌套的二级引用。引用的区块内也可以使用其他的 Markdown 语法。</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>Markdown 使用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 标签来包裹代码块</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>一行 * 号</p>
+<hr>
+<p>一行有空格的 * 号</p>
+<hr>
+<p>一行有空格的 - 号</p>
+<hr>
+<p>一行 _ 号</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*****</span><br><span class="line">* * * *</span><br><span class="line">- - - - 英文减号</span><br><span class="line">______  英文下划线</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="图片-链接-邮件"><a href="#图片-链接-邮件" class="headerlink" title="图片 链接 邮件"></a>图片 链接 邮件</h2><p><code>图片</code>行内式<br><img src="/images/Unsplash_mdxx12.jpg" alt="Unsplash" title="Bird"></p>
+<hr>
+<p><code>图片</code>参考式<br>![Unsplash][1]<br>[1]: images/Unsplash_mdxx12.jpg  “Bird”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#96;图片&#96;行内式</span><br><span class="line">![图片alt](图片地址 &quot;图片title&quot;)</span><br><span class="line">图片alt是图片的说明文字</span><br><span class="line">图片title是当鼠标移动到图片上面显示的文字。可省略。</span><br><span class="line"></span><br><span class="line">![Unsplash](&#x2F;images&#x2F;Unsplash_mdxx12.jpg &quot;Bird&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#96;图片&#96;参考式</span><br><span class="line">[图片alt][id]</span><br><span class="line">[id]: url  &quot;title&quot;</span><br><span class="line"></span><br><span class="line">![Unsplash][1]</span><br><span class="line">[1]: images&#x2F;Unsplash_mdxx12.jpg  &quot;Bird&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>链接</code>行内式<br><a href="https://github.com/winjin" target="_blank" rel="noopener" title="github link">Github</a></p>
+<p><code>链接</code>参考式<br>[Github][2]<br>[2]: <a href="https://github.com/winjin" target="_blank" rel="noopener">https://github.com/winjin</a></p>
+<p><a href="https://github.com/winjin" target="_blank">github winjin</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#96;链接&#96;行内式</span><br><span class="line">[Github](https:&#x2F;&#x2F;github.com&#x2F;winjin &quot;github link&quot;)</span><br><span class="line"></span><br><span class="line">&#96;链接&#96;参考式</span><br><span class="line">[Github][2]</span><br><span class="line">[2]: https:&#x2F;&#x2F;github.com&#x2F;winjin</span><br><span class="line">或者</span><br><span class="line">&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;github.com&#x2F;winjin&quot; target&#x3D;&quot;_blank&quot;&gt;github winjin&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><p>在一下符号前加 \ 可以转移一下符号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">&#96;   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   底线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  括弧</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   惊叹号</span><br></pre></td></tr></table></figure>
+
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th>th</th>
+<th align="left">th</th>
+<th align="right">th</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>td</td>
+<td align="left">td</td>
+<td align="right">td</td>
+</tr>
+<tr>
+<td>td</td>
+<td align="left">td</td>
+<td align="right">td</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">th | th | th </span><br><span class="line">---|:--|---:</span><br><span class="line">td | td | td</span><br><span class="line">td | td | td</span><br></pre></td></tr></table></figure>
+<p>-: 设置内容和标题栏居右对齐。<br>:- 设置内容和标题栏居左对齐。<br>:-: 设置内容和标题栏居中对齐。</p>
+<p>一个 反引号 可以标记一小段行内代码<br>三个 反引号 可以标记一段代码块</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-About-Me" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
