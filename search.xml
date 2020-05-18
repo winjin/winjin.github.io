@@ -1550,56 +1550,6 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"/src/iamges/favicon.ico&gt;</span></span></span><br><span class="line"><span class="tag"><span class="string"></span></span></span><br><span class="line"><span class="tag"><span class="string">&lt;link rel="</span><span class="attr">icon</span>" <span class="attr">href</span>=<span class="string">"/src/iamges/favicon.png&gt;</span></span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>Computer Config</title>
-    <url>/2020/03/24/Computer-Config/</url>
-    <content><![CDATA[<p>——–[ 概览 ]———————————————————————————-</p>
-<p>  电脑型号            联想 ThinkPad E550c 笔记本电脑<br>  操作系统            Windows 10 64位 ( DirectX 12 )</p>
-<p>——–[ 主板 ]———————————————————————————-</p>
-<p>——–[ 处理器 ]——————————————————————————–</p>
-<p>  处理器              英特尔 第四代酷睿 i5-4210U 双核<br>  速度                2.40 GHz (100 MHz x 24.0)<br>  处理器数量          核心数: 2 / 线程数: 4<br>  核心代号            Haswell<br>  生产工艺            22.0纳米<br>  插槽/插座           BGA1168<br>  一级数据缓存        2 x 32 KB, 8-Way, 64 byte lines<br>  一级代码缓存        2 x 32 KB, 8-Way, 64 byte lines<br>  二级缓存            2 x 256 KB, 8-Way, 64 byte lines<br>  三级缓存            3 MB, 12-Way, 64 byte lines</p>
-<p>——–[ 硬盘 ]———————————————————————————-</p>
-<p>  大小                500 GB<br>  转速                7200 转/分<br>  缓存                32 MB<br>  硬盘已使用          共 1963 次，累计 6523 小时</p>
-<p>  接口                SATA III<br>  数据传输率          600.00 MB/秒<br>  特征                S.M.A.R.T,  APM,  48-bit LBA,  NCQ</p>
-<p>——–[ 内存 ]———————————————————————————-</p>
-<p>  制造日期            2015 年 37 周<br>  型号                7F7F7F7F43 RMT3170ME68F9F1600<br>  序列号              43739109<br>  厂商                Ramaxel<br>  模块位宽:           64 Bits<br>  模块电压:           SSTL 1.35V</p>
-<p>——–[ 显卡 ]———————————————————————————-</p>
-<p>  显存                112 MB</p>
-<p>  BIOS日期            10/16/20 (非显卡制造日期)</p>
-<p>  驱动日期            20161216</p>
-<p>  BIOS日期            10/16/20 (非显卡制造日期)</p>
-<p>  驱动日期            12-27-2017</p>
-<p>——–[ 显示器 ]——————————————————————————–</p>
-<p>  厂商                联想<br>  固件程序日期        2013 年 41 周 (非显示器制造日期)<br>  屏幕尺寸            15.5 英寸 (34 厘米 x 19 厘米)<br>  显示比例            宽屏 16 : 9<br>  分辨率              1366 x 768 32 位真彩色<br>  Gamma               2.20<br>  电源管理            Standby, Suspend, Active-Off<br>  最大分辨率          1366 x 768</p>
-<p>——–[ 其他设备 ]——————————————————————————</p>
-<p>  制造商              联想</p>
-<p>  制造商              联想</p>
-<p>  键盘                PS/2 标准键盘<br>  鼠标                ThinkPad UltraNav<br>  鼠标                HID-compliant 鼠标</p>
-<p>  摄像头              Intel(R) RealSense(TM) 3D Camera Virtual Driver</p>
-<p>——–[ PCI设备 ]——————————————————————————-</p>
-<p>  设备ID              0A04<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to HOST<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              0A16<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Display / VGA<br>  子系统制造商        Lenovo<br>  子系统ID            502117AA</p>
-<p>  设备ID              9C31<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / USB (UHCI)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C3A<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Simple Communication / Other<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              1559<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Network / Ethernet<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C20<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Multimedia / Hi-definition Audio<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C10<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备ID              9C14<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备ID              9C18<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备ID              9C1A<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to PCI<br>  子系统ID            00000000</p>
-<p>  设备ID              9C26<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / USB 2.0 (EHCI)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C43<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Bridge / PCI to ISA<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C03<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Storage / Serial ATA (AHCI 1.0)<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C22<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Serial / SMBus Controller<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              9C24<br>  制造商              Intel<br>  制造商ID            8086<br>  类别                Data Aquisition &amp; Signal Processing / Other<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>  设备ID              B723<br>  制造商              Realtek<br>  制造商ID            10EC<br>  类别                Network / Other<br>  子系统制造商        Lenovo<br>  子系统ID            B73617AA</p>
-<p>  设备ID              5227<br>  制造商              Realtek<br>  制造商ID            10EC<br>  类别                 /<br>  子系统制造商        Lenovo<br>  子系统ID            502017AA</p>
-<p>——–[ USB设备 ]——————————————————————————-</p>
-<p>  制造商ID            0BDA<br>  产品ID              B728<br>  类别                224 / 1 / 1<br>  设备                 </p>
-<p>  制造商ID            8086<br>  产品ID              0A66<br>  类别                239 / 2 / 1<br>  设备<br>  版本                USB 3.0</p>
-<p>  制造商ID            0461<br>  产品ID              4D22<br>  类别                0 / 0 / 0<br>  设备                ? USB Optical Mouse<br>  Serial              ?<br>  版本                USB 2.0</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hexo note</title>
     <url>/2020/03/23/Hexo-note/</url>
     <content><![CDATA[<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="Hexo-建站"><a href="#Hexo-建站" class="headerlink" title="Hexo 建站"></a>Hexo 建站</h2><p><code>Hexo</code>是一个博客框架，默认使用<code>Markdown</code>作为引擎解析文章，生成静态 html 文件。<br>安装 hexo 之前需要安装有 Node.js 和 Git。</p>
