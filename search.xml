@@ -5,6 +5,12 @@
     <url>/2020/05/13/InnoDB-note/</url>
     <content><![CDATA[<h1 id="MySQL-InnoDB-引擎"><a href="#MySQL-InnoDB-引擎" class="headerlink" title="MySQL InnoDB 引擎"></a>MySQL InnoDB 引擎</h1><h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><p>MySQL 需要是三个部分： 连接客户端的各种连接器，数据存储和日志，MySQL服务</p>
 <h2 id="InnoDB"><a href="#InnoDB" class="headerlink" title="InnoDB"></a>InnoDB</h2><p>InnoDB内存结构包含四大核心组件：<br>1 缓冲池(Buffer Pool)；<br>2 写缓冲(Change Buffer)；<br>3 自适应哈希索引(Adaptive Hash Index)；<br>4 日志缓冲(Log Buffer)；</p>
+<p>一系列的插入SQL语句统称为范插入语句。不同方式对自增键的影响不一样。</p>
+<h2 id="简单插入-simple-insert"><a href="#简单插入-simple-insert" class="headerlink" title="简单插入 simple insert"></a>简单插入 simple insert</h2><p>可以提前知道插入行数的普通insert/replace 语句，不论是单条还是多条。</p>
+<h2 id="大批量插入-bulk-insert"><a href="#大批量插入-bulk-insert" class="headerlink" title="大批量插入 bulk insert"></a>大批量插入 bulk insert</h2><p>不可以提前知道插入行数的insert 语句，就是批量插入。</p>
+<p>INSERT INTO t1 (name,age) SELECT name,age FROM t2;<br>REPLACE … SELECT …;<br>LOAD DATA</p>
+<h2 id="混合插入-mixed-mode-insert"><a href="#混合插入-mixed-mode-insert" class="headerlink" title="混合插入 mixed-mode insert"></a>混合插入 mixed-mode insert</h2><p>有的行指定了自增键，不用数据库生成。有的行没有指定自增键，需要数据库生成。<br>INSERT INTO t1 (id,name) VALUES (111,”111”),(NULL, “abc”),(222,”222”),(NULL,”xyz”);</p>
+<p>INSERT … ON DUPLICATE KEY UPDATE … ;</p>
 ]]></content>
       <tags>
         <tag>MySQL, InnoDB</tag>
