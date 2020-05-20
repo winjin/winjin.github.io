@@ -61,7 +61,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">238字</span>
+            <span class="post-count">647字</span>
         </span>
     </span>
 
@@ -70,7 +70,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1分钟</span>
+            <span class="post-count">2分钟</span>
         </span>
     </span>
 </div>
@@ -95,9 +95,49 @@
       
 
       
-      <h1 id="MySQL-InnoDB-引擎"><a href="#MySQL-InnoDB-引擎" class="headerlink" title="MySQL InnoDB 引擎"></a>MySQL InnoDB 引擎</h1><h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><p>MySQL 需要是三个部分： 连接客户端的各种连接器，数据存储和日志，MySQL服务</p>
-<h2 id="InnoDB"><a href="#InnoDB" class="headerlink" title="InnoDB"></a>InnoDB</h2><p>InnoDB内存结构包含四大核心组件：<br>1 缓冲池(Buffer Pool)；<br>2 写缓冲(Change Buffer)；<br>3 自适应哈希索引(Adaptive Hash Index)；<br>4 日志缓冲(Log Buffer)；</p>
-<p>一系列的插入SQL语句统称为范插入语句。不同方式对自增键的影响不一样。</p>
+      <h1 id="MySQL-InnoDB-引擎"><a href="#MySQL-InnoDB-引擎" class="headerlink" title="MySQL InnoDB 引擎"></a>MySQL InnoDB 引擎</h1><h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><p><code>MySQL</code>大致是三个部分： 连接客户端的各种连接器，数据存储和日志，<code>MySQL</code>服务</p>
+<p>1 客户端，是各种编程语言的connector<br>2 MySQL服务，内部包含各种组件，实现各种功能<br>3 文件系统，数据存储与日志</p>
+<h2 id="InnoDB"><a href="#InnoDB" class="headerlink" title="InnoDB"></a>InnoDB</h2><p>InnoDB用户无法手动创建哈希索引，InnoDB会自调优(self-tuning)，判断合适就会建立相关哈希索引。</p>
+<p><code>InnoDB</code>支持事务、行锁、聚集索引和 MVCC 特性。</p>
+<p><code>InnoDB</code>整体也分为三层：<br>（1）内存结构(In-Memory Structure)，这一层在MySQL服务进程内<br>（2）OS Cache，这一层属于内核态内存<br>（3）磁盘结构(On-Disk Structure)，这一层在文件系统上</p>
+<p><code>InnoDB</code>内存结构包含四大核心组件：</p>
+<ul>
+<li><p>缓冲池(Buffer Pool)</p>
+<ul>
+<li>提升<code>InnoDB</code>性能,加速读请求，避免每次都访问磁盘。</li>
+<li><code>InnoDB</code>的缓冲池缓存表数据与索引数据,减少磁盘IO操作。</li>
+</ul>
+</li>
+<li><p>写缓冲(Change Buffer)</p>
+<ul>
+<li>提升<code>InnoDB</code>性能,加速写请求，避免每次都访问磁盘。</li>
+<li>写的数据在缓冲页中：<ul>
+<li>直接修改缓冲池中的页，一次内存操作；接着再写入 redo log，一次磁盘顺序写操作。</li>
+<li>读取，会命中缓冲池的页。缓冲池LRU数据淘汰，会将没用的页刷回磁盘。</li>
+<li>缓冲池的页，会定期刷到磁盘，批量写到磁盘。</li>
+</ul>
+</li>
+<li>写的数据不在缓冲页中：<ul>
+<li>不在缓冲池中操作，而是记录到写缓冲记录中。</li>
+<li>同时写入 redo log，一次磁盘顺序写操作。</li>
+<li>数据库异常崩溃，从 redo log 中恢复数据。</li>
+<li>写缓冲定期刷</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>自适应哈希索引(Adaptive Hash Index)</p>
+<ul>
+<li>目的是提升<code>InnoDB</code>性能，加速读请求，减少<code>索引</code>查询的寻路路径。</li>
+</ul>
+</li>
+<li><p>日志缓冲(Log Buffer)</p>
+<ul>
+<li>极大优化redo日志性能，并提供了高并发与强一致性的折衷方案。</li>
+</ul>
+</li>
+</ul>
+<h2 id="插入方式"><a href="#插入方式" class="headerlink" title="插入方式"></a>插入方式</h2><p>一系列的插入SQL语句统称为范插入语句。不同方式对自增键的影响不一样。</p>
 <h2 id="简单插入-simple-insert"><a href="#简单插入-simple-insert" class="headerlink" title="简单插入 simple insert"></a>简单插入 simple insert</h2><p>可以提前知道插入行数的普通insert/replace 语句，不论是单条还是多条。</p>
 <h2 id="大批量插入-bulk-insert"><a href="#大批量插入-bulk-insert" class="headerlink" title="大批量插入 bulk insert"></a>大批量插入 bulk insert</h2><p>不可以提前知道插入行数的insert 语句，就是批量插入。</p>
 <p>INSERT INTO t1 (name,age) SELECT name,age FROM t2;<br>REPLACE … SELECT …;<br>LOAD DATA</p>
